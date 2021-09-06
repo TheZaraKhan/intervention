@@ -14,33 +14,3 @@ module.exports = {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-// vite.config.js excerpt:
-// import { defineConfig } from 'vite'
-// import { dirname } from 'path';
-// import { fileURLToPath } from 'url';
-
-// export default defineConfig({
-//   root: 'client',
-//   build: {
-//     outDir: 'dist',
-//     rollupOptions: {
-//       input: {
-//         main: dirname(fileURLToPath(import.meta.url + 'index.html')),
-//         login: dirname(fileURLToPath(import.meta.url + 'login.html')),
-//       }
-//     }
-//   },
-// });
-
-// main: new URL('./client/index.html', import.meta.url).pathname
