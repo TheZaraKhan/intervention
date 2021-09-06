@@ -39,11 +39,7 @@ module.exports = {
           450: '#A89CC8' 
          },
       },
-      backgroundSize: {
-        '100%': '100%',
-       '50%': '50%',
-        
-      }
+     
     }
   },
   variants: {
