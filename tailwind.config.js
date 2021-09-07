@@ -1,12 +1,9 @@
 module.exports = {
-  purge: [
-   
-  ],
+  purge: [ ],
   darkMode: false, // or 'media' or 'class'
-  theme: {
-     
+  theme: {    
       fontFamily: {
-        sans : [ 'SegoeUI', 'sans-serif']
+        sans : [ '"Segoe UI"', 'sans-serif']
       },
       screens: {
         '2xs': '320px',
@@ -22,12 +19,8 @@ module.exports = {
         'login': "url('/assets/images/bg-login.jpg')",
         'signup': "url('/assets/images/bg-signup.jpg')",
       }),
-      zIndex: ['hover', 'active'],
-     
-      colors: {
-        red: {
-          450: '#DBDBDB'
-        },
+      zIndex: ['hover', 'active'],    
+      colors: { 
         green: {
           900: '#145143',
           800: '#28816D',
@@ -35,11 +28,11 @@ module.exports = {
           50: '#E9F5F2',
         },
         'mute': '#F4F7E9',
-         indigo:{
-          450: '#A89CC8' 
-         },
-      },
-     
+         
+      },  
+      height:{
+        85 : '23.9rem',
+      }  
     }
   },
   variants: {
