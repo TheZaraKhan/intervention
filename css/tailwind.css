@@ -65,3 +65,36 @@
   }
 
   
+/* ----------CSS for Div switch in in signup interested categories section----------- */
+.switch {
+	position: relative;
+}
+
+.div_a {
+	position: relative;
+		opacity: 1;
+	transition:1s;
+}
+
+.div_hover {
+	position: absolute;
+	opacity: 0;
+  top:0;
+
+}
+
+.switch:hover .div_hover {
+	opacity: 1;
+	transition-delay:100ms;
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+
+
+}
+/* -------------------- */
+
+
+.bg-grad{
+  background: linear-gradient(215.09deg, #104233 0%, #B8D245 100%);
+
+}
