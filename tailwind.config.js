@@ -6,7 +6,7 @@ module.exports = {
         sans : [ '"Segoe UI"', 'sans-serif']
       },
       screens: {
-        '2xs': '320px',
+        '2xs': '330px',
         xs: '480px',
         sm: '700px',
         md: '850px',
