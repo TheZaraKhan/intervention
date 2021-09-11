@@ -65,7 +65,7 @@
   }
 
   
-/* ----------CSS for Div switch in in signup interested categories section----------- */
+/* ----------CSS for Div in signup interested categories section----------- */
 .switch {
 	position: relative;
 }
@@ -91,10 +91,99 @@
 
 
 }
-/* -------------------- */
-
-
+ 
 .bg-grad{
   background: linear-gradient(215.09deg, #104233 0%, #B8D245 100%);
 
 }
+
+
+
+/* -------------------- nav links  ---------------------- */
+
+ 
+.active:after {
+
+content: " ";
+position: absolute;
+bottom: -8px;
+display: block;
+width: 100%;
+border-bottom: 5px solid #B3CF38;
+border-radius: 20px;
+}
+
+.active img{
+  filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
+}
+.active p{
+  color:#B3CF38;
+}
+
+ 
+.non-active:hover:after {
+content: " ";
+position: absolute;
+bottom: -8px;
+display: block;
+width: 100%;
+border-bottom: 5px solid #B3CF38;
+border-radius: 20px;
+}
+
+.non-active:hover img {
+  filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
+  color: #B3CF38;
+
+} 
+
+.non-active:hover p{ 
+  color: #B3CF38;
+
+} 
+
+img.drop:after{
+  content: url('../assets/images/ic_NavDropdown.svg');
+    width: 8px;
+    margin-left: 5px;
+ }
+
+
+
+/* ------- sub nav links -------- */
+
+.selected p{
+  color: #B3CF38;
+}
+
+.non-selected:hover p{ 
+  color: #B3CF38;
+
+} 
+
+
+.shadow-box{
+  box-shadow: 0 0 7px 0 rgba(0,0,0,0.2);     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+  
+ 
+ 
+ 
