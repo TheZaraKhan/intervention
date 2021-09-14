@@ -167,23 +167,10 @@ img.drop:after{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------------------------- */
   
- 
+.action-hover:hover{
+  filter: invert(60%) sepia(27%) saturate(1047%) hue-rotate(111deg) brightness(100%) contrast(89%);
+} 
  
  

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="/css/tailwind.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+      <style>
+      </style>
+   </head>
+   <body class="bg-gray-100">
+      <div class="w-full top-0 fixed ">
+         <div class="bg-green-1000 py-2   w-full">
+            <div class="w-5/6 md:w-3/4 mx-auto flex">
+               
+               <div class="sm:flex-none flex-grow"> <img class="h-9 sm:mx-2 mt-3" src="/assets/images/logo-nav.png" alt="" /> </div>
+               <div class="sm:flex-grow sm:flex w-full left-0 sm:relative bg-green-1000  fixed bottom-0">
+                  <ul class=" flex flex-row list-none sm:gap-x-4 md:gap-x-8 2xl:gap-x-12 4xl:gap-x-20 w-max mx-auto ">
+                     <li class="relative w-16"> <a class="active  cursor-pointer">
+                        <img class=" mx-auto " src="/assets/images/ic_NavExplore.svg" alt="">
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer">
+                        <img class=" mx-auto  non-active" src="/assets/images/ic_NavActivities.svg" alt="">
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer">
+                        <img class=" mx-auto  " src="/assets/images/ic_NavPostEvent.svg" alt="">
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer">
+                        <img class=" mx-auto  " src="/assets/images/ic_NavMessages.svg" alt="">
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer">
+                        <img class=" mx-auto  " src="/assets/images/ic_NavAccount.svg" alt="">
+                        </a> 
+                     </li>
+                  </ul>
+               </div>
+               <div id="user-menu" class="flex-none">
+                  <div class="flex cursor-pointer items-center">
+                     <div class=" overflow-hidden rounded-full w-10 h-10 border-lime border-2 "> <img class="w-auto" src="/assets/images/user.jpeg" alt="" /> </div>
+                     <img src="/assets/images/ic_NavDropdown.svg" class="ml-1" alt="" />
+                  </div>
+                  <p class="text-white ml-1 text-xs cursor-pointer">Kevin</p>
+               </div>
+            </div>
+         </div>
+         <div class=" w-5/6 md:w-3/4 mx-auto relative  " >
+            <div class="w-56  bg-white p-1 absolute z-40 right-2 rounded shadow-box " id="menu-box"  >
+               <div class="flex items-center m-1 pb-2 border-b border-lime">
+                  <div class="flex-none">
+                     <img src="/assets/images/user.jpeg" class=" w-12  rounded-full" alt="">
+                  </div>
+                  <div class="flex-grow pl-2 ">
+                     <p class="text-gray-700 font-bold text-xs">Kevin Heart</p>
+                     <a class="text-gray-700 font-light text-xs cursor-pointer hover:text-lime">See your profile</a>
+                  </div>
+               </div>
+               <ul class="w-full border-b pb-1 border-lime">
+                  <li class="w-full flex cursor-pointer items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/images/ic_preferences.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Prefrences</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+                  <li class="w-full flex cursor-pointer items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/images/ic_preferences.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Contact us</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+                  <li class="w-full flex cursor-pointer items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/images/ic_logout.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Logout</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+               </ul>
+               <div class=" w-full text-gray-400 mx-auto px-1">
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition ease-in-out duration-500 ">Privacy</a> - 
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition ease-in-out duration-500  "> Terms </a> -
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition ease-in-out duration-500  "> Cookies </a> -
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition ease-in-out duration-500  "> Feedback </a> <br>
+                  <a href="" class=" cursor-default text-xs  font-extralight   "> MYLE &#169 2018 </a> 
+               </div>
+            </div>
+         </div>
+         <div class="md:w-3/4 w-full flex h-32 sm:h-auto flex-wrap mx-auto shadow-xl bg-white p-2 ">
+            <div class="sm:flex-1 flex-initial w-full sm:order-1 order-2">
+               <ul class="text-left sm:flex space-x-6 hidden ">
+                  <li class="relative w-10">
+                     <a href=" " class="text-gray-500 active hover:text-lime">
+                        <img src="/assets/images/ic_lowerNavList.svg" alt="" class="mx-auto mt-1 ">
+                        <p class="text-lime text-center font-light text-xs py-1"> LIST </p>
+                     </a>
+                  </li>
+                  <li class="relative w-10">
+                     <a href=" " class="text-gray-500 non-active hover:text-lime">
+                        <img src="/assets/images/ic_lowerNav.svg" alt="" class="mx-auto mt-1 ">
+                        <p class="text-gray-400 text-center font-light text-xs py-1"> MAP </p>
+                     </a>
+                  </li>
+               </ul>
+
+               <div class=" flex sm:hidden mx-auto mt-2 px-5">
+                  <button
+                     class="flex-1 text-sm rounded-full rounded-r-none py-1 border border-green-700 text-white bg-green-700 hover:border-green-900  hover:bg-green-900 transition ease-in-out duration-500   ">
+                 List
+                  </button>
+                  <button
+                     class="flex-1 text-sm rounded-full rounded-l-none py-1 border border-green-700 text-green-700  bg-white hover:border-green-900 hover:text-white hover:bg-green-900 transition ease-in-out duration-500  ">
+                 Map
+                  </button>
+               </div>
+
+
+            </div>
+            <div class="sm:flex-1 flex-initial relative w-full sm:order-2 order-1">
+               <ul id="items" class="sm:float-right w-max  flex sm:mx-0 mx-auto gap-x-4 sm:gap-x-8">
+                  <li class="">
+                     <a href=" " class="text-gray-400 selected  hover:text-lime">
+                        <img src="/assets/images/ic_category.svg" alt="" class="mx-auto mt-1 ">
+                        <p class="text-gray-400 text-center selected font-light uppercase sm:text-xs text-2xs py-1"> TODAY </p>
+                     </a>
+                  </li>
+                  <li class="">
+                     <a href=" " class="text-gray-400   hover:text-lime">
+                        <img src="/assets/images/ic_category.svg" alt="" class="mx-auto mt-1 ">
+                        <p class="  text-center selected font-light uppercase sm:text-xs text-2xs py-1"> Arts & Culture</p>
+                     </a>
+                  </li>
+                  <li class="">
+                     <a href=" " class="text-gray-400   hover:text-lime">
+                        <img src="/assets/images/ic_location.svg" alt="" class="mx-auto mt-1 ">
+                        <p class=" text-center selected font-light uppercase sm:text-xs text-2xs py-1"> 50 Miles LHE, Pak </p>
+                     </a>
+                  </li>
+                  <li class="">
+                     <a href=" " class="text-gray-400   hover:text-lime">
+                        <img src="/assets/images/ic_sort.svg" alt="" class="mx-auto mt-1 ">
+                        <p class="  text-center selected font-light uppercase sm:text-xs text-2xs py-1">Date - Age</p>
+                     </a>
+                  </li>
+                  <li class=" cursor-pointer">
+                     <a  id="search" class="text-gray-400   hover:text-lime">
+                        <img src="/assets/images/ic_search.svg" alt="" class="mx-auto mt-1 ">
+                        <p class=" text-center selected font-light uppercase sm:text-xs text-2xs py-1"> search </p>
+                     </a>
+                  </li>
+               </ul>
+               <ul id="search-box" class="right-0 top-0 w-full absolute bg-white sm:space-x-8" style="display: none;">
+                  <li  class="w-full px-2 py-1 border flex border-lime  items-center rounded-xl">
+                     <i class="flex-none fas fa-search text-green-600"></i>
+                     <input type="text" class=" flex-grow w-full outline-none text-sm text-gray-800 p-2 " placeholder="Search"/>
+                     <p id="close-search" class=" text-gray-300 cursor-pointer flex-none">x</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="sm:px-0 px-2">
+
+         <div class="w-full md:w-3/4 sm:mt-44 mt-56 mb-16 rounded-xl flex-col md:mx-auto   overflow-hidden shadow-box bg-white" >
+            <div class="w-full bg-green-50 py-2 px-3 ">
+               <p class="text-green-800 text-lg">  Check Out These Events
+               </p>
+            </div>
+
+            <div class="h-full flex  items-center" style="min-height: 60vh;">
+               <img src="/assets/images/ic_explorePlaceHolder.png" class="mx-auto" alt="">
+            </div>
+
+
+          
+
+
+
+
+
+
+
+         </div>
+      </div>
+      <div class="fixed top-48 right-0">
+         <img id="panel-open" src="/assets/images/ic_sidecomplete.svg" class="block cursor-pointer" alt="">
+      </div>
+      <div class="w-full h-full min-h-screen bg-black hidden bg-opacity-50 fixed top-0"  ></div>
+      <div class="  2xl:w-5/12  4xl:w-3/12 sm:w-7/12 w-full   h-screen flex fixed top-0 right-0 hidden  " id="side-panel" style="margin-right: -50px ;">
+         <div class="flex-none mt-52">
+            <img id="panel-close" src="/assets/images/ic_sidecompleteClose.svg" class="cursor-pointer" alt="">
+         </div>
+         <div class="flex-grow bg-white  overflow-y-scroll  "  >
+            <div class="flex-col">
+               <div class="w-full bg-green-50 py-2 px-5 ">
+                  <p class="text-green-800 text-lg">  Location Details
+                  </p>
+               </div>
+               <div class="p-5">
+                  <div class="border-b flex border-gray-300 p-3 ">
+                     <i class="flex-none text-xl fas fa-search text-lime"></i>
+                     <input type="text" class=" flex-grow w-full outline-none text-sm text-gray-800  px-3 " placeholder="Search Location"/>
+                  </div>
+                  <div class="w-full h-56 mt-7 mx-auto border-gray-200 rounded-xl shadow-box border-2"></div>
+                  <div class="w-full py-7 mt-7 mx-auto border-gray-200 rounded border-2"></div>
+               </div>
+               <div class="w-full bg-green-50 py-2 px-5  mt-7 ">
+                  <span class="text-green-800 text-lg  ">  Categories
+                  </span>
+
+                   <a href="" class="rounded-full  float-right text-right text-sm bg-green-800 text-white hover:bg-green-900 py-1 px-3">
+                      SELECT ALL
+                     </a>
+               </div>
+               <div class="p-5">
+                  <div class="w-full flex items-center mt-7">
+                     <div class="flex-none">
+                        <i class="flex-none text-xl fas fa-arrow-alt-circle-left hover:text-green-800 cursor-pointer text-lime"></i>
+                     </div>
+                     <div class="flex-grow md:px-10 sm:px-4 px-2 flex gap-3">
+                        <div class=" rounded-xl cursor-pointer overflow-hidden w-auto switch">
+                           <div class="div_a w-auto relative">
+                              <img src="/assets/images/bg-login.jpg" alt="">
+                              <p class="text-white mx-auto text-xs absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+                           </div>
+                           <div class="div_hover w-full h-full flex  items-center">
+                              <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+                              <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+                           </div>
+                        </div>
+                        <div class=" rounded-xl cursor-pointer overflow-hidden w-auto switch">
+                           <div class="div_a w-auto relative">
+                              <img src="/assets/images/bg-login.jpg" alt="">
+                              <p class="text-white mx-auto text-xs absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+                           </div>
+                           <div class="div_hover w-full h-full flex  items-center">
+                              <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+                              <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+                           </div>
+                        </div>
+                        <div class=" rounded-xl cursor-pointer overflow-hidden w-auto switch">
+                           <div class="div_a w-auto relative">
+                              <img src="/assets/images/bg-login.jpg" alt="">
+                              <p class="text-white mx-auto text-xs absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+                           </div>
+                           <div class="div_hover w-full h-full flex  items-center">
+                              <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+                              <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex-none">
+                        <i class="flex-none text-xl fas fa-arrow-alt-circle-right hover:text-green-800 cursor-pointer text-lime"></i>
+                     </div>
+                  </div>
+               </div>
+               <div class="w-full bg-green-50 py-2 px-5 mt-7 ">
+                  <p class="text-green-800 text-lg " >  Sort - Filter
+                  </p>
+               </div>
+               <div class="p-5">
+                  <div class="w-full py-7 mt-7 mx-auto border-gray-200 rounded border-2"></div>
+                  <p class="mt-7  text-gray-400">Filter by Age</p>
+                  <div class="w-full py-7 mt-2 mx-auto border-gray-200 rounded border-2"></div>
+                  <p class="mt-7  text-gray-400">Filter by Price</p>
+                  <div class="w-full py-7 mt-2 mx-auto border-gray-200 rounded border-2"></div>
+               </div>
+               <div class="w-full bg-green-50 py-2 px-5  mt-7 ">
+                  <p class="text-green-800 text-lg">  I'm Looking for Events
+                  </p>
+               </div>
+               <div class="p-5">
+                  <div class="w-full py-7 mt-7 mx-auto border-gray-200 rounded border-2"></div>
+               </div>
+               <div class="w-full  text-center mb-7">
+                  <button
+                     class="  border-green-900 w-2/4 text-sm sm:text-lg font-light  rounded py-2 my-5 px-14 border bg-green-900 hover:border-green-700 transition ease-in-out duration-500  text-white hover:bg-green-700">
+                  Apply
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+      $("#menu-box").hide();
+      $(document).ready(function(){
+          $("#search").click(function(){
+              $("#search-box").show(300,"linear");
+            //   $("#items").hide(0);    
+          });
+           $("#close-search").click(function(){
+              $("#search-box").hide(300,"linear");
+            //   $("#items").delay( 300 ).fadeIn(200);
+          });
+          $("#user-menu").click(function(){
+              $("#menu-box").slideToggle(200,"linear");             
+          });
+          $("#panel-open").click(function(){
+              $("#side-panel").toggleClass("hidden").animate({right: 50},400);
+              $("#panel-open").hide();  
+               
+              $('.bg-black ').slideToggle('slow');
+              $('body').css('overflow', 'hidden');
+          });
+          $("#panel-close").click(function(){
+              $("#side-panel").toggleClass("hidden").animate({right: -50},400);
+           
+              $("#panel-open").show();   
+              $('.bg-black ').hide(); 
+              $('body').css('overflow', 'scroll');
+          });  
+      });
+   </script>
+</html>

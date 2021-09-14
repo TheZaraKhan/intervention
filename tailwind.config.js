@@ -1,47 +1,53 @@
 module.exports = {
-  purge: [ ],
+  purge: [],
   darkMode: false, // or 'media' or 'class'
-  theme: {    
-      fontFamily: {
-        sans : [ '"Segoe UI"', 'sans-serif']
-      },
-      screens: {
-        '2xs': '330px',
-        xs: '480px',
-        sm: '700px',
-        md: '850px',
-        lg: '1080px',
-        xl: '1200px',
-        '2xl': '1440px',
-        '3xl': '1600px',
-        '4xl': '1800px',
-        '5xl': '2000px',
-      },
+  theme: {
+    fontFamily: {
+      sans: ['"Segoe UI"', 'sans-serif']
+    },
+    screens: {
+      '2xs': '330px',
+      xs: '480px',
+      sm: '700px',
+      md: '850px',
+      lg: '1080px',
+      xl: '1200px',
+      '2xl': '1440px',
+      '3xl': '1600px',
+      '4xl': '1800px',
+      '5xl': '2000px',
+    },
     extend: {
       backgroundImage: theme => ({
         'login': "url('/assets/images/bg-login.jpg')",
         'signup': "url('/assets/images/bg-signup.jpg')",
+        'event': "url('/assets/images/event.jpeg')",
       }),
-      zIndex: ['hover', 'active'],    
-      colors: { 
+      zIndex: ['hover', 'active'],
+      colors: {
         green: {
-         1000: '#0C3020',
+          1000: '#0C3020',
           900: '#145143',
           800: '#28816D',
           400: '#209A75',
-           50: '#E9F5F2',
-           
+          50: '#E9F5F2',
         },
-        gray:{
+        gray: {
           150: '#EFEFEF',
         },
         'mute': '#F4F7E9',
         'lime': '#B3CF38',
-         
-      },  
-      height:{
-        85 : '23.9rem',
-      }  
+      },
+      height: {
+        85: '23.9rem',
+        2.5: '0.7rem',
+      },
+      top: {
+        18: '4.5rem',
+      },
+      fontSize:{
+        '2xs': '10px',
+      },
     }
   },
   variants: {

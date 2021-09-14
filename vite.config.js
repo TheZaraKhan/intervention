@@ -11,7 +11,8 @@ module.exports = {
         signup2: resolve(__dirname, 'pages/signup2/index.html'),
         signup3: resolve(__dirname, 'pages/signup3/index.html'),
         signup4: resolve(__dirname, 'pages/signup4/index.html'),
-        explore: resolve(__dirname, 'pages/explore/index.html')
+        explore_a: resolve(__dirname, 'pages/explore_a/index.html'),
+        explore_b: resolve(__dirname, 'pages/explore_b/index.html'),
       }
     }
   }
