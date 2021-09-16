@@ -15,7 +15,7 @@ module.exports = {
       '2xl': '1440px',
       '3xl': '1600px',
       '4xl': '1800px',
-      '5xl': '2000px',
+      '5xl': '2100px',
     },
     extend: {
       backgroundImage: theme => ({
@@ -47,6 +47,11 @@ module.exports = {
       },
       fontSize:{
         '2xs': '10px',
+        '3xs': '9px',
+      },
+      width:{
+        100 : '35rem',
+        '30vw': '40vw',
       },
     }
   },
