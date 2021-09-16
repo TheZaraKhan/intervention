@@ -11,6 +11,8 @@
       </style>
    </head>
    <body class="bg-gray-100">
+
+ <div class="fixed h-screen w-screen bg-right bg-no-repeat z-0 top-0 " style="background-image: url('/assets/images/background.png'); z-index: -1;"></div>     
       <div class="w-full top-0 fixed ">
          <div class="bg-green-1000 py-2   w-full">
             <div class="w-11/12 mx-auto flex">       
@@ -34,7 +36,7 @@
                      </li>
                      <li class="relative w-16"> <a class="non-active cursor-pointer">
                         <img class=" mx-auto  " src="/assets/images/ic_NavMessages.svg" alt="">
-                        <p class="text-gray-300 text-2xs hidden 2xs:block text-center mb-1 ">ACTIVITIES</p>
+                        <p class="text-gray-300 text-2xs hidden 2xs:block text-center mb-1 ">ACTIVITY</p>
                         </a> 
                      </li>
                      <li class="relative w-16"> <a class="non-active cursor-pointer">
@@ -47,7 +49,8 @@
                <div id="user-menu" class="flex-none">
                   <div class="flex mt-2 cursor-pointer items-center">
                      <div class=" overflow-hidden rounded-full w-10 h-10 border-lime border-2 "> <img class="w-auto" src="/assets/images/user.jpeg" alt="" /> </div>
-                      
+                       
+                      <img src="/assets/images/ic_NavDropdown.svg" class="ml-1" alt="" style="width: 0.7rem;" />
                   </div>
                   <p class="text-white ml-1 text-xs cursor-pointer">Kevin</p>
                </div>
@@ -67,18 +70,15 @@
                <ul class="w-full border-b pb-1 border-lime">
                   <li class="w-full flex cursor-pointer items-center p-3 hover:bg-gray-150 rounded ">
                      <img class="flex-none" src="/assets/images/ic_preferences.svg" alt="">
-                     <p class="flex-grow px-4 text-gray-500">Prefrences</p>
-                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                     <p class="flex-grow px-4 text-gray-500">Prefrences</p> 
                   </li>
                   <li class="w-full flex cursor-pointer items-center p-3 hover:bg-gray-150 rounded ">
                      <img class="flex-none" src="/assets/images/ic_preferences.svg" alt="">
-                     <p class="flex-grow px-4 text-gray-500">Contact us</p>
-                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                     <p class="flex-grow px-4 text-gray-500">Contact us</p> 
                   </li>
                   <li class="w-full flex cursor-pointer items-center p-3 hover:bg-gray-150 rounded ">
                      <img class="flex-none" src="/assets/images/ic_logout.svg" alt="">
-                     <p class="flex-grow px-4 text-gray-500">Logout</p>
-                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                     <p class="flex-grow px-4 text-gray-500">Logout</p> 
                   </li>
                </ul>
                <div class=" w-full text-gray-400 mx-auto px-1">
@@ -90,7 +90,7 @@
                </div>
             </div>
          </div>
-         <div class="md:w-11/12 w-full flex h-32 sm:h-auto flex-wrap mx-auto shadow-xl bg-white p-2 ">
+         <div class="md:w-11/12 w-full flex h-32 sm:h-auto flex-wrap mx-auto shadow-xl bg-white py-2 sm:px-2">
             <div class="sm:flex-1 flex-initial w-full sm:order-1 order-2">
                <!-- <ul class="text-left sm:flex space-x-6 hidden ">
                   <li class="relative w-10">
@@ -121,32 +121,33 @@
 
             </div>
             <div class="sm:flex-1 flex-initial relative w-full sm:order-2 order-1">
-               <ul id="items" class="sm:float-right w-max  flex sm:mx-0 mx-auto 2xs:gap-x-5 gap-x-3  sm:gap-x-8">
-                  <li class="">
+               <ul id="items" class="sm:float-right w-max  flex sm:mx-0 mx-auto 2xs:gap-x-6 xs:gap-x-10 xxs:gap-x-8 gap-x-3  sm:gap-x-8">
+                
+                  <li class="  ">
                      <a href=" " class="text-gray-400 selected  hover:text-lime">
                         <img src="/assets/images/ic_date.svg" alt="" class="mx-auto mt-1 ">
                         <p class="text-gray-400 text-center selected font-light uppercase sm:text-2xs  text-3xs py-1"> TODAY </p>
                      </a>
                   </li>
-                  <li class="">
+                  <li class="  ">
                      <a href=" " class="text-gray-400   hover:text-lime">
                         <img src="/assets/images/ic_category.svg" alt="" class="mx-auto mt-1 ">
                         <p class="  text-center selected font-light uppercase sm:text-2xs  text-3xs py-1"> Arts & Culture</p>
                      </a>
                   </li>
-                  <li class="">
+                  <li class="  ">
                      <a href=" " class="text-gray-400   hover:text-lime">
                         <img src="/assets/images/ic_location.svg" alt="" class="mx-auto mt-1 ">
                         <p class=" text-center selected font-light uppercase sm:text-2xs  text-3xs py-1"> 50 Miles LHE, Pak </p>
                      </a>
                   </li>
-                  <li class="">
+                  <li class="  ">
                      <a href=" " class="text-gray-400   hover:text-lime">
                         <img src="/assets/images/ic_sort.svg" alt="" class="mx-auto mt-1 ">
                         <p class="  text-center selected font-light uppercase sm:text-2xs  text-3xs py-1">Date - Age</p>
                      </a>
                   </li>
-                  <li class=" cursor-pointer">
+                  <li class="  cursor-pointer ">
                      <a  id="search" class="text-gray-400   hover:text-lime">
                         <img src="/assets/images/ic_search.svg" alt="" class="mx-auto mt-1 ">
                         <p class=" text-center selected font-light uppercase sm:text-2xs  text-3xs py-1"> search </p>
