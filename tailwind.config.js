@@ -42,6 +42,7 @@ module.exports = {
       height: {
         85: '23.9rem',
         2.5: '0.7rem',
+        42: '150px',
       },
       top: {
         18: '4.5rem',
@@ -59,5 +60,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+      require('@tailwindcss/aspect-ratio'),
+  ],
 }

@@ -176,3 +176,6 @@ img.drop:after{
 } 
  
  
+.catego  {
+      @apply w-28 h-24 2xs:w-36 2xs:h-32 sm:w-40 sm:h-36 mx-auto;
+   }
