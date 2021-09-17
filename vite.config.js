@@ -12,7 +12,8 @@ module.exports = {
         signup3: resolve(__dirname, 'pages/signup3/index.html'),
         signup4: resolve(__dirname, 'pages/signup4/index.html'),
         explore_a: resolve(__dirname, 'pages/explore_a/index.html'),
-        explore_b: resolve(__dirname, 'pages/explore_b/index.html'),
+        explore_b: resolve(__dirname, 'pages/explore_b/index.html'),  
+        My_Activities_Cell: resolve(__dirname, 'pages/My_Activities_Cell/index.html'), 
       }
     }
   }
