@@ -96,6 +96,11 @@
   background: linear-gradient(215.09deg, #104233 0%, #B8D245 100%);
 
 }
+.bg-grad-green{
+  opacity: 0.75; 
+  background: linear-gradient(180deg, #B3CF38 0%, #104233 100%);
+
+}
 
 
 
