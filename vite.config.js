@@ -14,6 +14,7 @@ module.exports = {
         explore_a: resolve(__dirname, 'pages/explore_a/index.html'),
         explore_b: resolve(__dirname, 'pages/explore_b/index.html'),  
         My_Activities_Cell: resolve(__dirname, 'pages/My_Activities_Cell/index.html'), 
+        empty_state: resolve(__dirname, 'pages/empty_state/index.html'), 
       }
     }
   }
