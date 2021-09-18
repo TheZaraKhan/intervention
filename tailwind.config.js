@@ -43,6 +43,7 @@ module.exports = {
         85: '23.9rem',
         2.5: '0.7rem',
         42: '150px',
+        '70vh' : '70vh',
       },
       top: {
         18: '4.5rem',
