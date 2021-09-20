@@ -24,7 +24,7 @@ module.exports = {
       backgroundImage: theme => ({
         'login': "url('/assets/images/bg-login.jpg')",
         'signup': "url('/assets/images/bg-signup.jpg')",
-        'event': "url('/assets/images/event.jpeg')",
+        'background': "url('/assets/images/background.png')",
       }),
       zIndex: ['hover', 'active'],
       colors: {
