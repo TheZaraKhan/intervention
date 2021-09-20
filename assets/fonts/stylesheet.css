@@ -2,7 +2,7 @@
     font-family: 'Segoe UI';
     src: url('SegoeUI-BoldItalic.eot');
     src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
-        url('SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-BoldItalic.eot') format('embedded-opentype'),
         url('SegoeUI-BoldItalic.woff2') format('woff2'),
         url('SegoeUI-BoldItalic.woff') format('woff'),
         url('SegoeUI-BoldItalic.ttf') format('truetype');
@@ -14,7 +14,7 @@
     font-family: 'Segoe UI';
     src: url('SegoeUI.eot');
     src: local('Segoe UI'), local('SegoeUI'),
-        url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI.eot') format('embedded-opentype'),
         url('SegoeUI.woff2') format('woff2'),
         url('SegoeUI.woff') format('woff'),
         url('SegoeUI.ttf') format('truetype');
@@ -26,7 +26,7 @@
     font-family: 'Segoe UI';
     src: url('SegoeUI-SemiBold.eot');
     src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
-        url('SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-SemiBold.eot') format('embedded-opentype'),
         url('SegoeUI-SemiBold.woff2') format('woff2'),
         url('SegoeUI-SemiBold.woff') format('woff'),
         url('SegoeUI-SemiBold.ttf') format('truetype');
@@ -38,7 +38,7 @@
     font-family: 'Segoe UI';
     src: url('SegoeUI-Light.eot');
     src: local('Segoe UI Light'), local('SegoeUI-Light'),
-        url('SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Light.eot') format('embedded-opentype'),
         url('SegoeUI-Light.woff2') format('woff2'),
         url('SegoeUI-Light.woff') format('woff'),
         url('SegoeUI-Light.ttf') format('truetype');
@@ -50,7 +50,7 @@
     font-family: 'Segoe UI';
     src: url('SegoeUI-Bold.eot');
     src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
-        url('SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Bold.eot') format('embedded-opentype'),
         url('SegoeUI-Bold.woff2') format('woff2'),
         url('SegoeUI-Bold.woff') format('woff'),
         url('SegoeUI-Bold.ttf') format('truetype');
@@ -62,7 +62,7 @@
     font-family: 'Segoe UI';
     src: url('SegoeUI-Italic.eot');
     src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
-        url('SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Italic.eot') format('embedded-opentype'),
         url('SegoeUI-Italic.woff2') format('woff2'),
         url('SegoeUI-Italic.woff') format('woff'),
         url('SegoeUI-Italic.ttf') format('truetype');
