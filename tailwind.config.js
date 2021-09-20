@@ -17,6 +17,8 @@ module.exports = {
       '3xl': '1600px',
       '4xl': '1800px',
       '5xl': '2100px',
+      '6xl': '2500px',
+      '7xl': '2770px',
     },
     extend: {
       backgroundImage: theme => ({
