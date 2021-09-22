@@ -17,8 +17,7 @@ module.exports = {
         empty_state: resolve(__dirname, 'pages/empty_state/index.html'),
         Notification_cell: resolve(__dirname, 'pages/Notification_cell/index.html'), 
         accounts_cell : resolve(__dirname,'pages/accounts_cell/index.html'),
-
-
+        postEvent : resolve(__dirname,'pages/postEvent/index.html'),
       }
     }
   }

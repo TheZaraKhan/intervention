@@ -1,4 +1,4 @@
- @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -197,6 +197,7 @@ img.drop:after{
 
 .shadow-box{
   box-shadow: 0 0 7px 0 rgba(0,0,0,0.2);     
+  overflow:hidden;
 }
 
 
@@ -210,3 +211,26 @@ img.drop:after{
 .catego  {
       @apply w-28 h-24 2xs:w-36 2xs:h-32 sm:w-40 sm:h-36 mx-auto;
    }
+
+
+/* --------Css for toogle button ---------- */
+
+.dot-shadow{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5);
+}
+.dot-line{
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+
+}
+input:checked ~ .dot-line {
+  background-color: #28816D;
+  
+}
+input:checked ~ .dot{
+transform: translateX(100%);
+}
+ 
+input:checked ~ .day {
+  opacity:1;
+  
+}
