@@ -26,6 +26,11 @@ module.exports = {
         'signup': "url('/assets/images/bg-signup.jpg')",
         'background': "url('/assets/images/background.png')",
       }),
+
+      maxWidth: {
+        '50': '50px', 
+       },
+
       zIndex: ['hover', 'active'],
       colors: {
         green: {
@@ -55,6 +60,7 @@ module.exports = {
         18: '4.5rem',
       },
       fontSize:{
+        
         '2xs': '10px',
         '3xs': '9px',
       },

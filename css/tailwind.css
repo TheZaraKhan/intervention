@@ -236,3 +236,10 @@ input:checked ~ .day {
 }
 
  
+
+
+/* ---------------------- event detail page ------------------------ */
+
+ .green-filter{
+  filter: invert(0%) sepia(28%) saturate(1041%) hue-rotate(111deg) brightness(100%) contrast(93%);
+ }

@@ -18,6 +18,8 @@ module.exports = {
         Notification_cell: resolve(__dirname, 'pages/Notification_cell/index.html'), 
         accounts_cell : resolve(__dirname,'pages/accounts_cell/index.html'),
         postEvent : resolve(__dirname,'pages/postEvent/index.html'),
+        editProfile : resolve(__dirname,'pages/editProfile/index.html'),
+        eventDetails : resolve(__dirname,'pages/eventDetails/index.html'),
       }
     }
   }

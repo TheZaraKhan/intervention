@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="/css/tailwind.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+      <style>
+      </style>
+   </head>
+   <body class="bg-gray-100">
+      <div class="w-full top-0 fixed ">
+         <div class="bg-green-1000 py-2   w-full">
+            <div class="w-11/12 mx-auto flex">
+               
+               <div class="sm:flex-none flex-grow"> <img class="h-9 sm:mx-2 mt-4" src="/assets/images/logo-nav.png" alt="" /> </div>
+               <div class="sm:flex-grow pt-1 sm:pt-0 sm:flex w-full left-0 sm:relative bg-green-1000  fixed bottom-0">
+                  <ul class=" flex flex-row list-none sm:gap-x-4 md:gap-x-8 2xl:gap-x-12 4xl:gap-x-20 w-max mx-auto ">
+                     <li class="relative w-16"> <a class="active  cursor-pointer transition duration-500 ease-in-out ">
+                        <img class=" mx-auto " src="/assets/images/ic_NavExplore.svg" alt="">
+                        <p class=" text-xs text-center mb-1 ">EXPLORE</p>
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                        <img class=" mx-auto  non-active" src="/assets/images/ic_NavActivities.svg" alt="">
+                        <p class="text-gray-300 text-xs text-center mb-1 ">BOOKMARK</p>
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                        <img class=" mx-auto  " src="/assets/images/ic_NavPostEvent.svg" alt="">
+                        <p class="text-gray-300 text-xs text-center mb-1 ">POST</p>
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                        <img class=" mx-auto  " src="/assets/images/ic_NavMessages.svg" alt="">
+                        <p class="text-gray-300 text-xs text-center mb-1 ">ACTIVITIES</p>
+                        </a> 
+                     </li>
+                     <li class="relative w-16"> <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                        <img class=" mx-auto  " src="/assets/images/ic_NavAccount.svg" alt="">
+                        <p class="text-gray-300 text-xs text-center mb-1 ">ACCOUNT</p>
+                        </a> 
+                     </li>
+                  </ul>
+               </div>
+               <div id="user-menu" class="flex-none">
+                  <div class="flex mt-2 cursor-pointer transition duration-500 ease-in-out  items-center">
+                     <div class=" overflow-hidden rounded-full w-10 h-10 border-lime border "> <img class="w-auto" src="/assets/images/user.jpeg" alt="" /> </div>
+                      
+                  </div>
+                  <p class="text-white ml-1 text-xs cursor-pointer transition duration-500 ease-in-out ">Kevin</p>
+               </div>
+            </div>
+         </div>
+         <div class="w-11/12 mx-auto relative">
+            <div class="w-56  bg-white p-1 absolute z-40 right-2 rounded shadow-box " id="menu-box"  >
+               <div class="flex items-center m-1 pb-2 border-b border-lime">
+                  <div class="flex-none">
+                     <img src="/assets/images/user.jpeg" class=" w-12  rounded-full" alt="">
+                  </div>
+                  <div class="flex-grow pl-2 ">
+                     <p class="text-gray-700 font-bold text-xs">Kevin Heart</p>
+                     <a class="text-gray-700 font-light text-xs cursor-pointer transition duration-500 ease-in-out  hover:text-lime">See your profile</a>
+                  </div>
+               </div>
+               <ul class="w-full border-b pb-1 border-lime">
+                  <li class="w-full flex cursor-pointer transition duration-500 ease-in-out  items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/images/ic_preferences.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Prefrences</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+                  <li class="w-full flex cursor-pointer transition duration-500 ease-in-out  items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/images/ic_preferences.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Contact us</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+                  <li class="w-full flex cursor-pointer transition duration-500 ease-in-out  items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/images/ic_logout.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Logout</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+               </ul>
+               <div class=" w-full text-gray-400 mx-auto px-1">
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500 ">Privacy</a> - 
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500  "> Terms </a> -
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500  "> Cookies </a> -
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500  "> Feedback </a> <br>
+                  <a href="" class=" cursor-default text-xs  font-extralight   "> MYLE &#169 2018 </a> 
+               </div>
+            </div>
+         </div>
+     
+      </div>
+      <div class="md:px-0 px-2 mb-6 md:w-11/12 4xl:w-10/12 5xl:w-3/4 7xl:w-3/5 mx-auto">
+         <div class="w-full   mt-32 mb-16 rounded-xl flex-col md:mx-auto   overflow-hidden shadow-box bg-white" >
+            <div class="w-full bg-green-50 py-2 px-3 ">
+               <p class="text-green-800 text-lg">  Edit your Profile
+               </p>
+            </div>
+            <div class="h-full  " style="min-height: 60vh;">
+               <div class= " text-center">
+                  <div class="w-28 h-28 mx-auto rounded-full overflow-hidden mt-6 bg-cover bg-no-repeat border-lime border-2 " 
+                     style="background-image: url('/assets/images/user.jpeg');">
+                  </div>
+                  <div class="mt-6">   
+                     <input type="file" id="upload" hidden="">
+                     <label for="upload" class="bg-green-800 hover:bg-green-900 font-light text-white transition ease-in-out duration-700 px-7 py-2 cursor-pointer rounded-full" >
+                        Change Picture
+                     </label>
+                  </div>
+               </div>
+              
+              
+               <div class="grid grid-cols-2 mt-10 gap-6">
+                  <div class="mt-10 sm:col-span-1  col-span-2">
+                     <h3 class="py-2 w-full mx-auto pl-6 bg-green-50 text-green-800 text-xl">Account
+                        Information
+                     </h3>
+                     <div class="sm:px-6 px-3 mb-5 w-full">
+                        <div class="w-full py-7 mt-5  border-gray-200 rounded border"></div>
+                        <div class="w-full py-7 mt-5 mx-auto border-gray-200 rounded border"></div>
+                        <div class="mt-2 p-4 rounded-lg bg-mute w-full">
+                           <p class="text-sm font-light text-gray-600">Minimum 6 or more characters and containing at least one
+                              capital letter, number and special character
+                           </p>
+                        </div>
+                        <div class="flex gap-4"> <div class="w-full py-7 mt-5  flex-1 border-gray-200 rounded border"></div>
+                        <div class="w-full py-7 mt-5  flex-1 border-gray-200 rounded border"></div></div>                       
+                     </div>
+                  </div>
+                  <div class="mt-10 sm:col-span-1 col-span-2">
+                     <h3 class="py-2 w-full  pl-6 bg-green-50 text-green-800 text-xl">Location Details</h3>
+                     <div class=" sm:px-6 px-3 mb-5 w-full">
+                        <div class="w-full py-7 mt-5 mx-auto border-gray-200 rounded border"></div>
+                        <div class="w-full  mt-5 rounded-lg mx-auto border-gray-200 min-h-80 h-48 border"></div>                
+                        <p class=" pt-5 text-gray-400 font-light ">Default Radius</p>
+                        <div class="w-full py-7 mt-5  flex-1 border-gray-200 rounded border"></div>
+                     </div>
+                  </div>
+
+               </div>
+
+
+           
+                  <div class="mt-10   col-span-2">
+                     <h3 class="py-2 w-full mx-auto pl-6 bg-green-50 text-green-800 text-xl">
+                        Personal Information
+                     </h3>
+                     <div class="sm:px-6 px-3 mb-5 w-full">
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4"> 
+                        <div class="w-full py-7 mt-5 border-gray-200 rounded border"></div>
+                        <div class="w-full py-7 mt-5 border-gray-200 rounded border"></div>
+                        <div class="w-full py-7 mt-5 border-gray-200 rounded border"></div>
+                        <div class="w-full py-7 mt-5 border-gray-200 rounded border"></div>
+                        </div>    
+
+                        <div class="flex flex-wrap gap-4 mt-7  "> 
+                        <div class="sm:flex-1 flex-initial w-full h-80 py-7 border-gray-200 rounded border"></div>
+                        <div class="sm:flex-1 flex-initial sm:pl-5  ">
+                           <div class=" p-4 rounded-lg bg-mute w-full">
+                              <p class="text-sm font-light text-gray-600">You can type what entertains you AND you can also select things that Make Your Life Entertaining from the list below
+                              </p>
+                           </div>
+                            <div class="w-full py-7 mt-6 h-36 flex-1 border-gray-200 rounded border"></div>
+                            <div class="w-full py-7 mt-5  flex-1 border-gray-200 rounded border"></div>
+                        </div>
+                       
+                        </div>                       
+                    
+                     </div>
+                  </div>
+
+                  <div class="mt-10   col-span-2">
+                     <h3 class="py-2 w-full mx-auto pl-6 bg-green-50 text-green-800 text-xl">
+                        Community Partner Details
+                     </h3>
+                     <div class="sm:px-6 px-3 mb-5 w-full">
+
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4"> 
+                        <div class="w-full py-7 col-span-1 mt-5 border-gray-200 rounded border"></div>
+                        <div class="w-full py-7 col-span-1 mt-5 border-gray-200 rounded border"></div> 
+                      
+                        </div>   
+                        <div class="col-span-2 p-4 rounded-lg my-5 bg-mute w-max">
+                           <p class="text-sm font-light text-gray-600">If you are a member of a community organizaiton associated with MYLE please contact your organization for your community partner passcode   </p>
+                        </div> 
+                        <div class=" w-full sm:text-right text-center"> <button
+                           class="flex-1 border-green-900  w-44  rounded py-2 my-8 sm:mr-16 border bg-green-900 hover:border-green-700 transition ease-in-out duration-500  text-white hover:bg-green-700">
+                           Update Profile
+                        </button> </div>
+                    
+                     </div>
+                  </div>
+            
+ 
+
+
+
+
+
+
+
+         </div>
+         </div>
+      </div>
+     
+   
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+      $("#menu-box").hide();
+      $(document).ready(function(){
+        
+          $("#user-menu").click(function(){
+              $("#menu-box").slideToggle(200,"linear");             
+          });
+        
+      });
+   </script>
+</html>
