@@ -241,7 +241,8 @@ input:checked ~ .day {
 /* ---------------------- event detail page ------------------------ */
 
  .green-filter{
-  filter: invert(0%) sepia(28%) saturate(1041%) hue-rotate(111deg) brightness(100%) contrast(93%);
+
+  filter: invert(60%) sepia(27%) saturate(1047%) hue-rotate(111deg) brightness(100%) contrast(89%);
  }
  
  
@@ -324,6 +325,12 @@ input:checked ~ .tab-content {
 @apply transition-all ease-linear duration-500;
     }
 
-    .filter-white{
+.filter-white{
       filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(200%) contrast(100%);
     }
+
+
+ .filter-lime{
+  filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
+
+ }
