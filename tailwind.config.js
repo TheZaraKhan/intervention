@@ -29,9 +29,13 @@ module.exports = {
 
       maxWidth: {
         '50': '50px', 
+        
        },
 
-      zIndex: ['hover', 'active'],
+      zIndex: { 
+        '-1': '-1',    
+    },
+   
       colors: {
         green: {
           1000: '#0C3020',
@@ -60,7 +64,7 @@ module.exports = {
         18: '4.5rem',
       },
       fontSize:{
-        
+        'md': '14px',
         '2xs': '10px',
         '3xs': '9px',
       },
@@ -68,10 +72,17 @@ module.exports = {
         100 : '35rem',
         '30vw': '40vw',
       },
+      transitionProperty: {
+        'height': 'height',
+        'max-height' :'max-height',
+      }
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      zIndex: ['hover', 'active'],
+      height: ['responsive', 'hover', 'focus'],
+    },
   },
   plugins: [
       require('@tailwindcss/aspect-ratio'),

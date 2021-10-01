@@ -243,3 +243,87 @@ input:checked ~ .day {
  .green-filter{
   filter: invert(0%) sepia(28%) saturate(1041%) hue-rotate(111deg) brightness(100%) contrast(93%);
  }
+ 
+ 
+/******  Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > label { 
+ color: #ddd; 
+ float: right; 
+}
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  cursor:pointer; } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFD700[];   cursor:pointer;} 
+
+
+/* -------------------------------- */
+
+.tab-content {
+@apply transition-all ease-linear duration-500 overflow-hidden max-h-0;
+} 
+
+input:checked + .tab-label{
+  @apply  bg-gray-100;
+}
+
+input:checked + .tab-label .tab-arrow {
+ @apply rotate-180 transform transition-all ease-linear duration-500; 
+  
+}
+
+input:checked ~ .tab-content {
+ @apply  border-t border-lime overflow-auto transition-max-height ease-linear duration-500 max-h-screen;
+}
+
+
+ 
+
+input:checked + .comment-section .tab-arrow {
+ @apply rotate-180 transform transition-all ease-linear duration-500; 
+  
+}
+
+input:checked ~ .tab-content {
+ @apply  border-t border-lime overflow-auto transition-all ease-linear duration-500 max-h-screen;
+}
+
+
+/* --------- tooltip ------------- */
+.rotate-45 {
+        --transform-rotate: 45deg;
+        transform: rotate(45deg);
+    }
+
+    .group:hover .group-hover\:flex {
+        display: flex;
+    }
+
+/* Icon button */
+.btnIcon:hover img{
+ filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(200%) contrast(100%);
+@apply transition-all ease-linear duration-500;
+    }
+
+    .filter-white{
+      filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(200%) contrast(100%);
+    }
