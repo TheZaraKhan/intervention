@@ -21,6 +21,7 @@ module.exports = {
         editProfile : resolve(__dirname,'pages/editProfile/index.html'),
         eventDetails : resolve(__dirname,'pages/eventDetails/index.html'),
         ReportEventPopup : resolve(__dirname,'pages/ReportEventPopup/index.html'),
+        prefrences : resolve(__dirname,'pages/prefrences/index.html'),
       }
     }
   }

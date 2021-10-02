@@ -4,14 +4,14 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Dashboard</title>
+      <title>Prefrences</title>
       <link rel="stylesheet" href="/css/tailwind.css" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
       <style>
       </style>
    </head>
    <body class="bg-gray-100">
-      <div class="w-full top-0 fixed ">
+      <div class="w-full top-0 fixed z-30 ">
          <div class="bg-green-1000 py-2   w-full">
             <div class="w-11/12 mx-auto flex">
                
@@ -47,7 +47,7 @@
                </div>
                <div id="user-menu" class="flex-none">
                   <div class="flex mt-2 cursor-pointer transition duration-500 ease-in-out  items-center">
-                     <div class=" overflow-hidden rounded-full w-10 h-10 border-lime border-2 "> <img class="w-auto" src="/assets/images/user.jpeg" alt="" /> </div>
+                     <div class=" overflow-hidden rounded-full w-10 h-10 border-lime border "> <img class="w-auto" src="/assets/images/user.jpeg" alt="" /> </div>
                       
                   </div>
                   <p class="text-white ml-1 text-xs cursor-pointer transition duration-500 ease-in-out ">Kevin</p>
@@ -91,221 +91,280 @@
                </div>
             </div>
          </div>
-         <div class="md:w-11/12 w-full flex h-32 sm:h-auto flex-wrap mx-auto shadow-xl bg-white p-2 ">
-            <div class="sm:flex-1 flex-initial w-full sm:order-1 order-2">
-               <!-- <ul class="text-left sm:flex space-x-6 hidden ">
-                  <li class="relative w-10">
-                     <a href=" " class="text-gray-500 active hover:text-lime">
-                        <img src="/assets/images/ic_lowerNavList.svg" alt="" class="mx-auto mt-1 ">
-                        <p class="text-lime text-center font-light text-xs py-1"> LIST </p>
-                     </a>
-                  </li>
-                  <li class="relative w-10">
-                     <a href=" " class="text-gray-500 non-active hover:text-lime">
-                        <img src="/assets/images/ic_lowerNav.svg" alt="" class="mx-auto mt-1 ">
-                        <p class="text-gray-400 text-center font-light text-xs py-1"> MAP </p>
-                     </a>
-                  </li>
-               </ul> -->
-
-               <div class=" flex sm:ml-0 mx-auto sm:w-60 mt-2 px-5">
-                  <button
-                     class="flex-1 text-sm rounded rounded-r-none py-1 border border-green-700 text-white bg-green-700 hover:border-green-900  hover:bg-green-900 transition ease-in-out duration-500   ">
-                 List
-                  </button>
-                  <button
-                     class="flex-1 text-sm rounded rounded-l-none py-1 border border-green-700 text-green-700  bg-white hover:border-green-900 hover:text-white hover:bg-green-900 transition ease-in-out duration-500  ">
-                 Map
-                  </button>
-               </div>
-
-
-            </div>
-            <div class="sm:flex-1 flex-initial relative w-full sm:order-2 order-1">
-               <ul id="items" class="sm:float-right w-max  flex sm:mx-0 mx-auto xs:gap-x-4 gap-x-3 sm:gap-x-8">
-                  <li class="">
-                     <a href=" " class="text-gray-400 selected  hover:text-lime">
-                        <img src="/assets/images/ic_date.svg" alt="" class="mx-auto mt-1 ">
-                        <p class="text-gray-400 text-center selected font-light uppercase sm:text-xs xs:text-2xs  text-3xs py-1"> TODAY </p>
-                     </a>
-                  </li>
-                  <li class="">
-                     <a href=" " class="text-gray-400   hover:text-lime">
-                        <img src="/assets/images/ic_category.svg" alt="" class="mx-auto mt-1 ">
-                        <p class="  text-center selected font-light uppercase sm:text-xs xs:text-2xs  text-3xs py-1"> Arts & Culture</p>
-                     </a>
-                  </li>
-                  <li class="">
-                     <a href=" " class="text-gray-400   hover:text-lime">
-                        <img src="/assets/images/ic_location.svg" alt="" class="mx-auto mt-1 ">
-                        <p class=" text-center selected font-light uppercase sm:text-xs xs:text-2xs  text-3xs py-1"> 50 Miles LHE, Pak </p>
-                     </a>
-                  </li>
-                  <li class="">
-                     <a href=" " class="text-gray-400   hover:text-lime">
-                        <img src="/assets/images/ic_sort.svg" alt="" class="mx-auto mt-1 ">
-                        <p class="  text-center selected font-light uppercase sm:text-xs xs:text-2xs  text-3xs py-1">Date - Age</p>
-                     </a>
-                  </li>
-                  <li class=" cursor-pointer transition duration-500 ease-in-out ">
-                     <a  id="search" class="text-gray-400   hover:text-lime">
-                        <img src="/assets/images/ic_search.svg" alt="" class="mx-auto mt-1 ">
-                        <p class=" text-center selected font-light uppercase sm:text-xs xs:text-2xs  text-3xs py-1"> search </p>
-                     </a>
-                  </li>
-               </ul>
-               <ul id="search-box" class="right-0 top-0 w-full absolute bg-white sm:space-x-8" style="display: none;">
-                  <li  class="w-full px-2 py-1 border flex border-lime  items-center rounded">
-                     <i class="flex-none fas fa-search text-green-600"></i>
-                     <input type="text" class=" flex-grow w-full outline-none text-sm text-gray-800 p-2 " placeholder="Search"/>
-
-                     <i id="close-search" class="flex-none fas fa-times cursor-pointer transition duration-500 ease-in-out  text-gray-400"></i>
-                     
-                  </li>
-               </ul>
-            </div>
-         </div>
+     
       </div>
-      <div class="md:px-0 px-2">
-         <div class="w-full md:w-11/12 sm:mt-44 mt-56 mb-16 rounded-xl flex-col md:mx-auto   overflow-hidden shadow-box bg-white" >
+      <div class="md:px-0 px-2 mb-6 md:w-11/12 4xl:w-10/12 5xl:w-3/4 7xl:w-3/5 mx-auto">
+         <div class="w-full   mt-32 mb-16 rounded-xl flex-col md:mx-auto   overflow-hidden shadow-box bg-white" >
             <div class="w-full bg-green-50 py-2 px-3 ">
-               <p class="text-green-800 text-lg">  Check Out These Events
+               <p class="text-green-800 text-lg"> Edit your Preferences 
                </p>
             </div>
-            <div class="h-full flex  items-center" style="min-height: 60vh;">
-            <div class="mx-auto" > <img src="/assets/images/empty-state/ic_explorePlaceHolder.svg" class="mx-auto" alt="">
-               <p class="text-green-800 text-center mt-5">No Events</p></div> 
-            </div>
-         </div>
-      </div>
-      <div class="fixed top-48 right-0">
-         <img id="panel-open" src="/assets/images/ic_sidecomplete.svg" class="block cursor-pointer transition duration-500 ease-in-out " alt="">
-      </div>
-      <div class="w-full h-full min-h-screen bg-black hidden bg-opacity-50 fixed top-0"  ></div>
-      <div class=" sm:w-3/5   md:w-3/5 xl:w-4/12   5xl:w-3/12 w-full  h-screen flex fixed top-0 right-0 hidden  " id="side-panel" style="margin-right: -150px ;">
-         <div class="flex-none mt-52">
-            <img id="panel-close" src="/assets/images/ic_sidecompleteClose.svg" class="cursor-pointer transition duration-500 ease-in-out " alt="">
-         </div>
-         <div class="flex-grow bg-white  overflow-y-scroll  "  >
-            <div class="flex-col">
-               <div class="w-full bg-green-50 py-2 px-5 ">
-                  <p class="text-green-800 text-lg">  Location Details
-                  </p>
-               </div>
-               <div class="p-5">
-                  <div class="border-b flex border-gray-300 p-3 ">
-                     <i class="flex-none text-xl fas fa-search text-lime"></i>
-                     <input type="text" class=" flex-grow w-full outline-none text-sm text-gray-800  px-3 " placeholder="Search Location"/>
-                  </div>
-                  <div class="w-full h-56 mt-7 mx-auto border-gray-200 rounded-xl shadow-box border-2"></div>
-                  <div class="w-full py-7 mt-7 mx-auto border-gray-200 rounded border-2"></div>
-               </div>
-               <div class="w-full bg-green-50 py-2 px-5  mt-7 ">
-                  <span class="text-green-800 text-lg  ">  Categories
-                  </span>
-                   <a href="" class="rounded-full  float-right text-right text-sm bg-green-800 text-white hover:bg-green-900 py-1 px-3">
-                      SELECT ALL
-                     </a>
-               </div>
-               <div class="px-5">
-                  <div class="w-full flex items-center mt-7">
-                     <div class="flex-none">
-                        <i class="flex-none text-xl fas fa-arrow-alt-circle-left hover:text-green-800 cursor-pointer transition duration-500 ease-in-out  text-lime"></i>
-                     </div>
-                     <div class="flex-grow md:px-5 sm:px-3 px-2 flex gap-3">
-                        <div class=" rounded-xl cursor-pointer transition duration-500 ease-in-out  overflow-hidden w-auto switch">
-                           <div class="div_a w-auto relative">
-                              <img src="/assets/images/bg-login.jpg" alt="">
-                              <p class="text-white mx-auto text-3xs sm:text-xs absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+            <div class="h-full  " style="min-height: 60vh;">
+               
+              <div class="flex gap-8 w-full flex-wrap py-6 sm:px-6 px-3 ">
+               <div class="sm:flex-1 w-full flex-initial ">
+               
+                  <div class="flex items-center py-1">
+                     <p class=" py-1 text-gray-400  font-light ">Allow Email Notifications</p>
+                     <!-- Toggle -->
+                     <div class=" ml-5 pt-1 ">
+                        <label    for="toogleA"    class="flex items-center cursor-pointer"   >
+                           <div class="relative z-10">
+                              <input id="toogleA" type="checkbox" class="sr-only" />
+                              <div class="w-8 h-4 bg-gray-300 dot-line rounded-full shadow-inner"></div>
+                              <div class="dot absolute w-5 h-5 bg-white rounded-full  dot-shadow border border-gray-100 -left-1 transition" style="top: -3px;"></div>
                            </div>
-                           <div class="div_hover w-full h-full flex  items-center">
-                              <i class="fas text-white sm:text-3xl z-20 text-2xl mx-auto fa-check-circle"></i>
-                              <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
-                           </div>
-                        </div>
-                        <div class=" rounded-xl cursor-pointer transition duration-500 ease-in-out  overflow-hidden w-auto switch">
-                           <div class="div_a w-auto relative">
-                              <img src="/assets/images/bg-login.jpg" alt="">
-                              <p class="text-white mx-auto text-3xs sm:text-xs absolute w-full text-center bottom-4">ARTS & CULTURE</p>
-                           </div>
-                           <div class="div_hover w-full h-full flex  items-center">
-                              <i class="fas text-white sm:text-3xl z-20 text-2xl mx-auto fa-check-circle"></i>
-                              <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
-                           </div>
-                        </div>
-                        <div class=" rounded-xl cursor-pointer transition duration-500 ease-in-out  overflow-hidden w-auto switch">
-                           <div class="div_a w-auto relative">
-                              <img src="/assets/images/bg-login.jpg" alt="">
-                              <p class="text-white mx-auto text-3xs sm:text-xs absolute w-full text-center bottom-4">ARTS & CULTURE</p>
-                           </div>
-                           <div class="div_hover w-full h-full flex  items-center">
-                              <i class="fas text-white sm:text-3xl z-20 text-2xl mx-auto fa-check-circle"></i>
-                              <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="flex-none">
-                        <i class="flex-none text-xl fas fa-arrow-alt-circle-right hover:text-green-800 cursor-pointer transition duration-500 ease-in-out  text-lime"></i>
+                        </label>
                      </div>
                   </div>
+                  <div class="flex items-center py-1">
+                     <p class=" py-1 text-gray-400  font-light mr-1">Allow Push Notifications</p>
+                     <!-- Toggle -->
+                     <div class=" ml-5 pt-1 ">
+                        <label    for="toogleB"    class="flex items-center cursor-pointer"   >
+                           <div class="relative">
+                              <input id="toogleB" type="checkbox" class="sr-only" />
+                              <div class="w-8 h-4 bg-gray-300 dot-line rounded-full shadow-inner"></div>
+                              <div class="dot absolute w-5 h-5 bg-white rounded-full  dot-shadow border border-gray-100 -left-1 transition" style="top: -3px;"></div>
+                           </div>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="flex items-center py-1">
+                     <p class=" py-1 text-gray-400  font-light ">Notifications Per Day</p>
+                   
+                  </div>
+
+
+                  <div class="w-full py-7 col-span-1 mt-5 border-gray-200 rounded border"></div>
+
                </div>
-               <div class="w-full bg-green-50 py-2 px-5 mt-7 ">
-                  <p class="text-green-800 text-lg " >  Sort - Filter
-                  </p>
-               </div>
-               <div class="p-5">
-                  <div class="w-full py-7 mt-7 mx-auto border-gray-200 rounded border-2"></div>
-                  <p class="mt-7  text-gray-400">Filter by Age</p>
-                  <div class="w-full py-7 mt-2 mx-auto border-gray-200 rounded border-2"></div>
-                  <p class="mt-7  text-gray-400">Filter by Price</p>
-                  <div class="w-full py-7 mt-2 mx-auto border-gray-200 rounded border-2"></div>
-               </div>
-               <div class="w-full bg-green-50 py-2 px-5  mt-7 ">
-                  <p class="text-green-800 text-lg">  I'm Looking for Events
-                  </p>
-               </div>
-               <div class="p-5">
-                  <div class="w-full py-7 mt-7 mx-auto border-gray-200 rounded border-2"></div>
-               </div>
-               <div class="w-full  text-center mb-7">
-                  <button
-                     class="  border-green-900 w-2/4 text-sm sm:text-lg font-light  rounded py-2 my-5 px-14 border bg-green-900 hover:border-green-700 transition ease-in-out duration-500  text-white hover:bg-green-700">
-                  Apply
-                  </button>
+
+               <div class="sm:flex-1 w-full flex-initial">
+                  <div class="flex items-center py-1">
+                     <p class=" py-1 text-gray-400  font-light ">Do not Disturb</p>
+                     <!-- Toggle -->
+                     <div class=" ml-5 pt-1 ">
+                        <label    for="toogleC"    class="flex items-center cursor-pointer"   >
+                           <div class="relative">
+                              <input id="toogleC" type="checkbox" class="sr-only" />
+                              <div class="w-8 h-4 bg-gray-300 dot-line rounded-full shadow-inner"></div>
+                              <div class="dot absolute w-5 h-5 bg-white rounded-full  dot-shadow border border-gray-100 -left-1 transition" style="top: -3px;"></div>
+                           </div>
+                        </label>
+                     </div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4"> 
+                     <div class="w-full py-7 col-span-1 mt-5 border-gray-200 rounded border"></div>
+                     <div class="w-full py-7 col-span-1 mt-5 border-gray-200 rounded border"></div> 
+                   
+                     </div>  
                </div>
             </div>
+
+<div class="w-full">
+   <p class=" py-1 text-gray-400 text-center  font-light ">Choose Categories for Notifications</p>
+
+   <div class=" all mx-auto mt-6 rounded-xl cursor-pointer overflow-hidden switch">
+      <div class="div_a w-full h-full relative bg-green-1000  overflow-hidden">
+         <img src="/assets/images/logo-nav.png" class=" mt-6 h-1/3 2xs:h-1/2 mx-auto">
+         <p class="text-white mx-auto absolute w-full text-center uppercase bottom-4">All Categories</p>
+      </div>
+      <div class="div_hover w-full h-full flex  items-center">
+         <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+         <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+      </div>
+   </div>
+
+   <div class="sm:w-5/6 grid sm:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 3xl:grid-cols-7 4xl:grid-cols-8 5xl:grid-cols-9 6xl:grid-cols-10 grid-cols-2 mt-10 mb-10 mx-auto gap-6 sm:gap-5">
+                     
+                            
+      <div class=" sample_div rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center uppercase bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
          </div>
       </div>
+      
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center uppercase bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+     
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/bg-login.jpg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+
+
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+
+      <div class=" rounded-xl w-full 5xl:h-36 4xl:h-28 3xl:h-36 2xl:h-36 lg:h-36  md:h-36 sm:h-36 xs:h-36 xxs:h-36  2xs:h-36  h-28 cursor-pointer overflow-hidden switch">
+         <div class="div_a w-full h-full relative overflow-hidden">
+            <img src="/assets/images/event-header.jpeg" class="h-full w-full object-cover object-top">
+            <p class="text-white mx-auto absolute w-full text-center bottom-4">ARTS & CULTURE</p>
+         </div>
+         <div class="div_hover w-full h-full flex  items-center">
+            <i class="fas text-white text-4xl z-20 mx-auto fa-check-circle"></i>
+            <div class="absolute opacity-70  bg-grad w-full z-10 h-full"></div>
+         </div>
+      </div>
+
+ 
+
+   </div>
+
+
+
+   <div class=" w-full sm:text-right text-center"> <button
+      class="flex-1 border-green-900  w-44  rounded py-2 my-8 sm:mr-16 border bg-green-900 hover:border-green-700 transition ease-in-out duration-500  text-white hover:bg-green-700">
+      Update Profile
+   </button> </div>
+</div>
+
+             </div>
+         </div>
+      </div>   
    </body>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script>
       $("#menu-box").hide();
       $(document).ready(function(){
-          $("#search").click(function(){
-              $("#search-box").show(300,"linear");
-            //   $("#items").hide(0);    
-          });
-           $("#close-search").click(function(){
-              $("#search-box").hide(300,"linear");
-            //   $("#items").delay( 300 ).fadeIn(200);
-          });
+        
           $("#user-menu").click(function(){
               $("#menu-box").slideToggle(200,"linear");             
           });
-          $("#panel-open").click(function(){
-              $("#side-panel").toggleClass("hidden").animate({right: 150},400);
-              $("#panel-open").hide();  
-               
-              $('.bg-black ').slideToggle('slow');
-              $('body').css('overflow', 'hidden');
-          });
-          $("#panel-close").click(function(){
-              $("#side-panel").toggleClass("hidden").animate({right: -150},400);
-           
-              $("#panel-open").show();   
-              $('.bg-black ').hide(); 
-              $('body').css('overflow', 'scroll');
-          });  
+
+
+    
+        
       });
+
+      $(window).ready(function(){
+         var x = $(".sample_div").width();
+      var y = $(".sample_div").height();
+      $(".all").width(x);
+      $(".all").height(y);
+
+      });
+      
    </script>
 </html>

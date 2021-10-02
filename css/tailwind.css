@@ -331,6 +331,6 @@ input:checked ~ .tab-content {
 
 
  .filter-lime{
-  filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
+filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
 
  }
