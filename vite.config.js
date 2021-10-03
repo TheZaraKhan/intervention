@@ -22,6 +22,7 @@ module.exports = {
         eventDetails : resolve(__dirname,'pages/eventDetails/index.html'),
         ReportEventPopup : resolve(__dirname,'pages/ReportEventPopup/index.html'),
         prefrences : resolve(__dirname,'pages/prefrences/index.html'),
+        userprofile : resolve(__dirname,'pages/userprofile/index.html'),
       }
     }
   }
