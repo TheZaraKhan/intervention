@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dashboard</title>
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+      <style>
+      </style>
+     <script type="module" crossorigin src="/assets/reviews.232e0fb8.js"></script>
+    <link rel="modulepreload" href="/assets/tailwind.c28676ed.js">
+    <link rel="stylesheet" href="/assets/tailwind.f95c3499.css">
+  </head>
+   <body class="bg-gray-100">
+      <div class="w-full top-0 fixed ">
+         <div class="bg-green-1000 py-2   w-full">
+            <div class="w-11/12 mx-auto flex">
+               <div class="sm:flex-none flex-grow"> <img class="h-9 sm:mx-2 mt-4" src="/assets/logo-nav.64233ad5.png" alt="" /> </div>
+               <div class="sm:flex-grow pt-1 sm:pt-0 sm:flex w-full left-0 sm:relative bg-green-1000  fixed bottom-0">
+                  <ul class=" flex flex-row list-none sm:gap-x-4 md:gap-x-8 2xl:gap-x-12 4xl:gap-x-20 w-max mx-auto ">
+                     <li class="relative w-16">
+                        <a class="active  cursor-pointer transition duration-500 ease-in-out ">
+                           <img class=" mx-auto " src="/assets/ic_NavExplore.e68f82d6.svg" alt="">
+                           <p class=" text-xs text-center mb-1 ">EXPLORE</p>
+                        </a>
+                     </li>
+                     <li class="relative w-16">
+                        <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                           <img class=" mx-auto  non-active" src="/assets/ic_NavActivities.220bd38c.svg" alt="">
+                           <p class="text-gray-300 text-xs text-center mb-1 ">BOOKMARK</p>
+                        </a>
+                     </li>
+                     <li class="relative w-16">
+                        <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                           <img class=" mx-auto  " src="/assets/ic_NavPostEvent.aadf9e9d.svg" alt="">
+                           <p class="text-gray-300 text-xs text-center mb-1 ">POST</p>
+                        </a>
+                     </li>
+                     <li class="relative w-16">
+                        <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                           <img class=" mx-auto  " src="/assets/ic_NavMessages.0df78516.svg" alt="">
+                           <p class="text-gray-300 text-xs text-center mb-1 ">ACTIVITIES</p>
+                        </a>
+                     </li>
+                     <li class="relative w-16">
+                        <a class="non-active cursor-pointer transition duration-500 ease-in-out ">
+                           <img class=" mx-auto  " src="/assets/ic_NavAccount.25a5601e.svg" alt="">
+                           <p class="text-gray-300 text-xs text-center mb-1 ">ACCOUNT</p>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div id="user-menu" class="flex-none">
+                  <div class="flex mt-2 cursor-pointer transition duration-500 ease-in-out  items-center">
+                     <div class=" overflow-hidden rounded-full w-10 h-10 border-lime border-2 "> <img class="w-auto" src="/assets/user.5cf3c132.jpeg" alt="" /> </div>
+                  </div>
+                  <p class="text-white ml-1 text-xs cursor-pointer transition duration-500 ease-in-out ">Kevin</p>
+               </div>
+            </div>
+         </div>
+         <div class="w-11/12 mx-auto relative">
+            <div class="w-56  bg-white p-1 absolute z-40 right-2 rounded shadow-box " id="menu-box"  >
+               <div class="flex items-center m-1 pb-2 border-b border-lime">
+                  <div class="flex-none">
+                     <img src="/assets/user.5cf3c132.jpeg" class=" w-12  rounded-full" alt="">
+                  </div>
+                  <div class="flex-grow pl-2 ">
+                     <p class="text-gray-700 font-bold text-xs">Kevin Heart</p>
+                     <a class="text-gray-700 font-light text-xs cursor-pointer transition duration-500 ease-in-out  hover:text-lime">See your profile</a>
+                  </div>
+               </div>
+               <ul class="w-full border-b pb-1 border-lime">
+                  <li class="w-full flex cursor-pointer transition duration-500 ease-in-out  items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/ic_preferences.abbbf496.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Prefrences</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+                  <li class="w-full flex cursor-pointer transition duration-500 ease-in-out  items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/ic_preferences.abbbf496.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Contact us</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+                  <li class="w-full flex cursor-pointer transition duration-500 ease-in-out  items-center p-3 hover:bg-gray-150 rounded ">
+                     <img class="flex-none" src="/assets/ic_logout.3ee712da.svg" alt="">
+                     <p class="flex-grow px-4 text-gray-500">Logout</p>
+                     <i class="fas flex-none fa-angle-right text-gray-400"></i>
+                  </li>
+               </ul>
+               <div class=" w-full text-gray-400 mx-auto px-1">
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500 ">Privacy</a> - 
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500  "> Terms </a> -
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500  "> Cookies </a> -
+                  <a href="" class="hover:text-lime text-xs  font-extralight  cursor-pointer transition duration-500 ease-in-out  transition ease-in-out duration-500  "> Feedback </a> <br>
+                  <a href="" class=" cursor-default text-xs  font-extralight   "> MYLE &#169 2018 </a> 
+               </div>
+            </div>
+         </div>
+         <div class="md:w-11/12 w-full flex  sm:h-auto flex-wrap mx-auto shadow-xl bg-white p-2 ">
+            <div class="w-full flex sm:w-11/12 mx-auto">
+               <div class=" flex flex-row w-full sm:gap-x-32 gap-10">
+                  <div class="flex-1 ">
+                     <div class="w-max float-right relative">
+                        <a class=" non-active cursor-pointer transition duration-500 ease-in-out   xs:flex items-center">
+                        <img class=" mx-auto h-8 sm:px-4  my-3" src="/assets/ic_lowerBarLiked.e6b55b6d.svg" alt=""> 
+                        <span class="text-gray-400 sm:pr-4 sm:pl-2 pr-3 pl-3  text-center ">Profile</span> 
+                        </a> 
+                     </div>
+                  </div>
+                  <div class="flex-1 ">
+                     <div class="w-max float-left relative">
+                        <a class=" active cursor-pointer transition duration-500 ease-in-out   xs:flex items-center">
+                        <img class=" mx-auto h-8 sm:px-4  my-3" src="/assets/ic_FeedbackTab.6af9b4e1.svg" alt="">
+                        <span class="text-gray-400 sm:pr-4 sm:pl-2 pr-3 pl-3  text-center ">Reviews</span> 
+                        </a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="md:px-0 px-2">
+         <div class="w-full md:w-11/12 sm:mt-44 mt-56 mb-16 rounded-xl flex-col md:mx-auto   overflow-hidden shadow-box bg-white" >
+            <div class="flex bg-green-50 gap-3 items-center py-2 px-3 ">
+               <p class="text-lime "> Elite Model Look </p>
+               <img src="/assets/ic_crumBack.902d1a04.svg" class="mt-1 w-8" alt="">
+               <p class="text-gray-400  "> Reviews</p>
+            </div>
+            <div class="h-full " style="min-height: 60vh;">
+               <div class=" w-full mx-auto mt-10 sm:w-1/2 xl:w-1/3 ">
+                  <div class="flex  w-auto px-2 mx-auto gap-4 sm:gap-6">
+                     <div class="flex-none">
+                        <div class= " text-center">
+                           <div class="border-lime mx-auto  rounded-full border-2  ">
+                              <div class="2xs:w-28 2xs:h-28 h-20 w-20 rounded-full overflow-hidden    " >
+                                 <img src="/assets/user.5cf3c132.jpeg" class="  w-full h-full object-cover" alt="">
+                              </div>
+                           </div>
+                           <div class="">   
+                              <button
+                                 class="  border-green-900 text-green-900  text-sm rounded py-1 2xs:px-8 px-5 my-5 border bg-white hover:border-green-700  transition ease-in-out duration-500  hover:text-white hover:bg-green-700">
+                              Follow
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="flex-grow ">
+                        <p class="text-green-900 font-light text-2xl 2xs:text-3xl"> Myle Markers Admin </p>
+                        <table class="table-auto mt-1">
+                           <tbody>
+                              <tr class="">
+                                 <td class="text-green-900 py-1 flex text-sm "> Joined: </td>
+                                 <td class=" pl-3 text-gray-500 py-1 text-sm  break-all font-light"> 2 Years ago </td>
+                              </tr>
+                              <tr class="">
+                                 <td class="text-green-900 py-1 flex text-sm "> Gender: </td>
+                                 <td class=" pl-3 text-gray-500 py-1 text-sm break-all font-light"> Male </td>
+                              </tr>
+                              <tr class="">
+                                 <td class="text-green-900 py-1 flex text-sm ">  Username: </td>
+                                 <td class=" pl-3 text-gray-500 py-1 text-sm break-all font-light"> @MYLEMARKERS </td>
+                              </tr>
+                              <tr class="">
+                                 <td class="text-green-900 py-1 flex text-sm ">  Verified: </td>
+                                 <td class=" pl-3 text-gray-500 py-1 text-sm break-all font-light"> Verified </td>
+                              </tr>
+                              <tr class="">
+                                 <td class="text-green-900 py-1 flex text-sm ">Website:</td>
+                                 <td class=" pl-3 text-gray-500 py-1 text-sm break-all font-light"> http://www.myle.com   </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               
+               </div>
+               <hr class="mt-10">
+
+
+               <div class="w-full pb-12 pt-5 px-3 ">  
+                  <div class="border-b md:w-11/12 w-full pl-5 py-5">
+                  <div class="grid md:grid-cols-3 sm:grid-cols-5 grid-cols-1 mx-auto">
+                  <div class=" md:col-span-2 sm:col-span-3 col-span-1 sm:border-r pr-0 sm:pr-4 xl:pr-16">
+                     <div class="flex gap-x-5">
+                        <div class="flex-none ">
+                           <div class="rounded-full overflow-hidden h-16 w-16">
+                              <img src="/assets/user.5cf3c132.jpeg" class=" h-full w-full object-cover" alt="">
+                           </div>
+                        </div>
+                        <div class="flex-grow pt-2">
+                           <h1 class="text-green-800 font-medium" >Alan Smith</h1>
+                           <p class="text-gray-400 text-sm font-extralight pt-1"> Nov 19, 2019 | 5:42 PM</p>
+                           <p class="text-gray-400 font-light pt-2"> Nunc justo eros, vehicula vel vehicula ut, lacinia a erat. Nam fringilla eros... Nullam aliquam interdum ipsum et tempor. Phasellus odio felis, scelerisque eu purus quis.</p>              
+                           <div class="flex my-2 gap-x-1">
+                              <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                               
+                              <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                              <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                              <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="md:col-span-1 sm:col-span-2 col-span-1 flex  gap-x-5 mt-7  md:mt-0 pl-0 sm:pl-4 xl:pl-16 pr-3">
+                     <div class="flex-none rounded-xl overflow-hidden w-20 h-20">
+                        <img src="/assets/bg-login.0732b4fb.jpg" class="h-full w-full cover"  alt="">
+                     </div>
+                     <div class="flex-grow overflow-hidden">
+                        <h1 class="text-green-800    truncate font-medium" >Elite Model Look Elite Model Look  Elite Model Look </h1>
+                        <p class="text-sm pt-1 flex   text-gray-400">
+                            <span><img class=' mt-1 mr-1 h-2.5' src="/assets/tag.452095a6.svg" alt="price tag"/></span>
+                           <span class="font-light">  $10.00 - $100.00</span>
+                        </p>
+                        <p class="text-gray-400 font-light text-sm pt-1"> From:   Nov 19, 2019 | 5:42 PM</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="border-b md:w-11/12 w-full pl-5 py-5">
+               <div class="grid md:grid-cols-3 sm:grid-cols-5 grid-cols-1 mx-auto">
+               <div class=" md:col-span-2 sm:col-span-3 col-span-1 sm:border-r pr-0 sm:pr-4 xl:pr-16">
+                  <div class="flex gap-x-5">
+                     <div class="flex-none ">
+                        <div class="rounded-full overflow-hidden h-16 w-16">
+                           <img src="/assets/user.5cf3c132.jpeg" class=" h-full w-full object-cover" alt="">
+                        </div>
+                     </div>
+                     <div class="flex-grow pt-2">
+                        <h1 class="text-green-800 font-medium" >Alan Smith</h1>
+                        <p class="text-gray-400 text-sm font-extralight pt-1"> Nov 19, 2019 | 5:42 PM</p>
+                        <p class="text-gray-400 font-light pt-2"> Nunc justo eros, vehicula vel vehicula ut, lacinia a erat. Nam fringilla eros... Nullam aliquam interdum ipsum et tempor. Phasellus odio felis, scelerisque eu purus quis.</p>              
+                        <div class="flex my-2 gap-x-1">
+                           <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                           <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                           <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                           <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                           <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="md:col-span-1 sm:col-span-2 col-span-1 flex  gap-x-5 mt-7  md:mt-0 pl-0 sm:pl-4 xl:pl-16 pr-3">
+                  <div class="flex-none rounded-xl overflow-hidden w-20 h-20">
+                     <img src="/assets/event.c434eeda.jpg" class="h-full w-full cover"  alt="">
+                  </div>
+                  <div class="flex-grow overflow-hidden">
+                     <h1 class="text-green-800    truncate font-medium" >Elite Model Look Elite Model Look  Elite Model Look </h1>
+                     <p class="text-sm pt-1 flex   text-gray-400">
+                         <span><img class=' mt-1 mr-1 h-2.5' src="/assets/tag.452095a6.svg" alt="price tag"/></span>
+                        <span class="font-light">  $10.00 - $100.00</span>
+                     </p>
+                     <p class="text-gray-400 font-light text-sm pt-1"> From:   Nov 19, 2019 | 5:42 PM</p>
+                  </div>
+               </div>
+            </div>
+         </div>      <div class="border-b md:w-11/12 w-full pl-5 py-5">
+            <div class="grid md:grid-cols-3 sm:grid-cols-5 grid-cols-1 mx-auto">
+            <div class=" md:col-span-2 sm:col-span-3 col-span-1 sm:border-r pr-0 sm:pr-4 xl:pr-16">
+               <div class="flex gap-x-5">
+                  <div class="flex-none ">
+                     <div class="rounded-full overflow-hidden h-16 w-16">
+                        <img src="/assets/event.c434eeda.jpg" class=" h-full w-full object-cover" alt="">
+                     </div>
+                  </div>
+                  <div class="flex-grow pt-2">
+                     <h1 class="text-green-800 font-medium" >Alan Smith</h1>
+                     <p class="text-gray-400 text-sm font-extralight pt-1"> Nov 19, 2019 | 5:42 PM</p>
+                     <p class="text-gray-400 font-light pt-2"> Nunc justo eros, vehicula vel vehicula ut, lacinia a erat. Nam fringilla eros... Nullam aliquam interdum ipsum et tempor. Phasellus odio felis, scelerisque eu purus quis.</p>              
+                     <div class="flex my-2 gap-x-1">
+                        
+                         
+                        <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                        <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                        <img src="/assets/star.a079bf15.svg" class="h-7" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="md:col-span-1 sm:col-span-2 col-span-1 flex  gap-x-5 mt-7  md:mt-0 pl-0 sm:pl-4 xl:pl-16 pr-3">
+               <div class="flex-none rounded-xl overflow-hidden w-20 h-20">
+                  <img src="/assets/bg-login.0732b4fb.jpg" class="h-full w-full cover"  alt="">
+               </div>
+               <div class="flex-grow overflow-hidden">
+                  <h1 class="text-green-800    truncate font-medium" >Elite Model Look Elite Model Look  Elite Model Look </h1>
+                  <p class="text-sm pt-1 flex   text-gray-400">
+                      <span><img class=' mt-1 mr-1 h-2.5' src="/assets/tag.452095a6.svg" alt="price tag"/></span>
+                     <span class="font-light">  $10.00 - $100.00</span>
+                  </p>
+                  <p class="text-gray-400 font-light text-sm pt-1"> From:   Nov 19, 2019 | 5:42 PM</p>
+               </div>
+            </div>
+         </div>
+      </div>
+            </div>
+            </div>
+         </div>
+      </div>
+    
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+      $("#menu-box").hide();
+      $(document).ready(function(){
+        
+          $("#user-menu").click(function(){
+              $("#menu-box").slideToggle(200,"linear");             
+          });
+         
+      });
+   </script>
+</html>

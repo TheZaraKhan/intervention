@@ -20,6 +20,7 @@ module.exports = {
       '6xl': '2500px',
       '7xl': '2770px',
     },
+  
     extend: {
       backgroundImage: theme => ({
         'login': "url('/assets/images/bg-login.jpg')",
@@ -36,6 +37,9 @@ module.exports = {
       },
       height: {
         '105':'105%',
+        '50vh': '50vh', 
+        '65vh': '65vh', 
+        '40vh': '40vh', 
       },
       zIndex: { 
         '-1': '-1',    
