@@ -339,3 +339,12 @@ filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%)
  div.floating-element + div + img {
    @apply hover:scale-110 transform cursor-pointer transition ease-in-out duration-500;
  }
+
+  
+
+ #my-box{
+            display: flex;
+            height: 0;
+            padding-bottom: 100%; 
+            width: 100%;
+          }
