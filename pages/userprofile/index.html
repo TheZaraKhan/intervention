@@ -752,7 +752,24 @@
           $("#user-menu").click(function(){
               $("#menu-box").slideToggle(200,"linear");             
           });
+
+          $("#more-options").click(function(){
+              $("#view-options").slideToggle(200,"linear");             
+          });
          
       });
+
+
+      $(document).on("click", function(event){
+      
+      var $triggerA = $("#more-options");
+      if($triggerA !== event.target && !$triggerA.has(event.target).length){
+          $("#view-options").slideUp("fast");  
+       }
+    
+     
+    
+    });
+    
    </script>
 </html>
