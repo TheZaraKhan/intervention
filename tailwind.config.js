@@ -80,7 +80,8 @@ module.exports = {
       width:{
         100 : '35rem',
         '30vw': '40vw',
-      },
+        '98': '98%',
+              },
       transitionProperty: {
         'height': 'height',
         'max-height' :'max-height',

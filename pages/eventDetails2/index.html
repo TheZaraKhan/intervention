@@ -10,51 +10,6 @@
 
 <style>
 
-.outer-div {
-    height: 60vh;
-  }
-  .inner-div {
-    height: 45vh;
-    
-  }
-  
-  
-@media screen and (min-width: 480px) {
-  .outer-div {
-    height: 65vh;
-  }
-  .inner-div {
-    height: 50vh;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .outer-div {
-    height: 45vh;
-  }
-  .inner-div {
-    height: 30vh;
-  }
-}
-
-@media screen and (min-width: 850px) {
-   .outer-div {
-    height: 40vh;
-  }
-  .inner-div {
-    height: 30vh;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-   .outer-div {
-    height: 65vh;
-  }
-  .inner-div {
-    height: 50vh;
-  }
-}
-
 </style>
 
    </head>
@@ -115,7 +70,7 @@
             <img src="/assets/images/event-header.jpeg" class=" absolute filter blur-md z-1 " style=" height: 110%; width: 110%; " alt="">   
             <div class="mx-auto w-full sm:w-10/12 bg-cover flex items-end relative bg-no-repeat mb-0 rounded-t-2xl overflow-hidden inner-div"  >
                <img src="/assets/images/event.jpg" class="w-full h-full object-cover absolute z-10" alt="">
-             
+              
                <div class="w-full py-6 mb-10 md:mb-0 relative">
                   <div class="absolute w-full h-full bottom-3 bg-black bg-opacity-60 z-10 blur-lg filter"> </div>
                   <div class="relative px-3 2xs:px-6 sm:px-10 z-20 mb-5">
@@ -143,12 +98,12 @@
                      <a   class="rounded-full text-green-800 cursor-default 2xs:text-sm text-xs bg-gray-300 py-1 px-3 w-max">ON-GOING</a>
                   </div>
                </div>
-               <div class="mx-auto block sm:hidden mt-2 sm:mt-0 mb-2 ">  
+               <div class="mx-auto block sm:hidden mt-2 sm:mt-0 mb-2 hidden">  
                   <img src="/assets/images/ic_priceTagGreen.svg" class="h-3 pr-2 inline-block" alt=""><span class="text-gray-500 inline-block">$10.00 - $100.00</span>   
                </div>
                <p class=" sm:mt-3"><i class="fa text-lime text-xl font-bold fa-calendar"></i> <span class=" text-gray-500">Tue, Nov 21, 2021 at 5:00-8:00 PM</span></p>
             </div>
-            <div class="sm:flex-none  w-full sm:w-auto flex-initial">
+            <div class="sm:flex-none  w-full sm:w-auto flex-initial hidden">
                <div class="mx-auto mt-2 sm:mt-0 mb-2 hidden sm:block">  
                   <img src="/assets/images/ic_priceTagGreen.svg" class="h-3 pr-2 inline-block" alt=""><span class="text-gray-500 inline-block">$10.00 - $100.00</span>   
                </div>
@@ -209,6 +164,7 @@
                   <p> 80</p>
                </div>
             </div>
+            <div class="hidden">
             <div class="absolute hidden md:block right-5 top-5">
                <button   class=" text-center border-green-900  text-sm sm:text-lg font-light rounded py-2 my-5 px-8 border bg-green-900 hover:border-green-700 transition ease-in-out duration-500  text-white hover:bg-green-700">
                Buy Tickets
@@ -219,6 +175,7 @@
                Buy Tickets
                </button>
             </div>
+         </div>
          </div>
       </div>
     

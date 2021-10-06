@@ -354,3 +354,50 @@ filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%)
             padding-bottom: 100%; 
             width: 100%;
           }
+
+/*header div box in event details page */
+
+.outer-div {
+    height: 60vh;
+  }
+  .inner-div {
+    height: 45vh;
+    
+  }
+  
+  
+@media screen and (min-width: 480px) {
+  .outer-div {
+    height: 65vh;
+  }
+  .inner-div {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .outer-div {
+    height: 45vh;
+  }
+  .inner-div {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 850px) {
+   .outer-div {
+    height: 40vh;
+  }
+  .inner-div {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+   .outer-div {
+    height: 65vh;
+  }
+  .inner-div {
+    height: 50vh;
+  }
+}

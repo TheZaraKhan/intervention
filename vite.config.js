@@ -20,6 +20,7 @@ module.exports = {
         postEvent : resolve(__dirname,'pages/postEvent/index.html'),
         editProfile : resolve(__dirname,'pages/editProfile/index.html'),
         eventDetails : resolve(__dirname,'pages/eventDetails/index.html'),
+        eventDetails2 : resolve(__dirname,'pages/eventDetails2/index.html'),
         ReportEventPopup : resolve(__dirname,'pages/ReportEventPopup/index.html'),
         prefrences : resolve(__dirname,'pages/prefrences/index.html'),
         userprofile : resolve(__dirname,'pages/userprofile/index.html'),
