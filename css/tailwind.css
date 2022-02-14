@@ -3,78 +3,175 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-MediumItalic.eot');
+    src: url('fonts/CeraPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-MediumItalic.woff2') format('woff2'),
+        url('fonts/CeraPro-MediumItalic.woff') format('woff'),
+        url('fonts/CeraPro-MediumItalic.ttf') format('truetype'),
+        url('fonts/CeraPro-MediumItalic.svg#CeraPro-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-BoldItalic.eot');
-    src: local('Segoe UI Bold Italic'), local('SegoeUI-BoldItalic'),
-        url('fonts/SegoeUI-BoldItalic.eot') format('embedded-opentype'),
-        url('fonts/SegoeUI-BoldItalic.woff2') format('woff2'),
-        url('fonts/SegoeUI-BoldItalic.woff') format('woff'),
-        url('fonts/SegoeUI-BoldItalic.ttf') format('truetype');
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-LightItalic.eot');
+    src: url('fonts/CeraPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-LightItalic.woff2') format('woff2'),
+        url('fonts/CeraPro-LightItalic.woff') format('woff'),
+        url('fonts/CeraPro-LightItalic.ttf') format('truetype'),
+        url('fonts/CeraPro-LightItalic.svg#CeraPro-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-BoldItalic.eot');
+    src: url('fonts/CeraPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-BoldItalic.woff2') format('woff2'),
+        url('fonts/CeraPro-BoldItalic.woff') format('woff'),
+        url('fonts/CeraPro-BoldItalic.ttf') format('truetype'),
+        url('fonts/CeraPro-BoldItalic.svg#CeraPro-BoldItalic') format('svg');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI.eot');
-    src: local('Segoe UI'), local('SegoeUI'),
-        url('fonts/SegoeUI.eot') format('embedded-opentype'),
-        url('fonts/SegoeUI.woff2') format('woff2'),
-        url('fonts/SegoeUI.woff') format('woff'),
-        url('fonts/SegoeUI.ttf') format('truetype');
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Thin.eot');
+    src: url('fonts/CeraPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Thin.woff2') format('woff2'),
+        url('fonts/CeraPro-Thin.woff') format('woff'),
+        url('fonts/CeraPro-Thin.ttf') format('truetype'),
+        url('fonts/CeraPro-Thin.svg#CeraPro-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Bold.eot');
+    src: url('fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Bold.woff2') format('woff2'),
+        url('fonts/CeraPro-Bold.woff') format('woff'),
+        url('fonts/CeraPro-Bold.ttf') format('truetype'),
+        url('fonts/CeraPro-Bold.svg#CeraPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Black.eot');
+    src: url('fonts/CeraPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Black.woff2') format('woff2'),
+        url('fonts/CeraPro-Black.woff') format('woff'),
+        url('fonts/CeraPro-Black.ttf') format('truetype'),
+        url('fonts/CeraPro-Black.svg#CeraPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Regular.eot');
+    src: url('fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Regular.woff2') format('woff2'),
+        url('fonts/CeraPro-Regular.woff') format('woff'),
+        url('fonts/CeraPro-Regular.ttf') format('truetype'),
+        url('fonts/CeraPro-Regular.svg#CeraPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-SemiBold.eot');
-    src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
-        url('fonts/SegoeUI-SemiBold.eot') format('embedded-opentype'),
-        url('fonts/SegoeUI-SemiBold.woff2') format('woff2'),
-        url('fonts/SegoeUI-SemiBold.woff') format('woff'),
-        url('fonts/SegoeUI-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-BlackItalic.eot');
+    src: url('fonts/CeraPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-BlackItalic.woff2') format('woff2'),
+        url('fonts/CeraPro-BlackItalic.woff') format('woff'),
+        url('fonts/CeraPro-BlackItalic.ttf') format('truetype'),
+        url('fonts/CeraPro-BlackItalic.svg#CeraPro-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-Light.eot');
-    src: local('Segoe UI Light'), local('SegoeUI-Light'),
-        url('fonts/SegoeUI-Light.eot') format('embedded-opentype'),
-        url('fonts/SegoeUI-Light.woff2') format('woff2'),
-        url('fonts/SegoeUI-Light.woff') format('woff'),
-        url('fonts/SegoeUI-Light.ttf') format('truetype');
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-ThinItalic.eot');
+    src: url('fonts/CeraPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-ThinItalic.woff2') format('woff2'),
+        url('fonts/CeraPro-ThinItalic.woff') format('woff'),
+        url('fonts/CeraPro-ThinItalic.ttf') format('truetype'),
+        url('fonts/CeraPro-ThinItalic.svg#CeraPro-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Light.eot');
+    src: url('fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Light.woff2') format('woff2'),
+        url('fonts/CeraPro-Light.woff') format('woff'),
+        url('fonts/CeraPro-Light.ttf') format('truetype'),
+        url('fonts/CeraPro-Light.svg#CeraPro-Light') format('svg');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-Bold.eot');
-    src: local('Segoe UI Bold'), local('SegoeUI-Bold'),
-        url('fonts/SegoeUI-Bold.eot') format('embedded-opentype'),
-        url('fonts/SegoeUI-Bold.woff2') format('woff2'),
-        url('fonts/SegoeUI-Bold.woff') format('woff'),
-        url('fonts/SegoeUI-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Medium.eot');
+    src: url('fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Medium.woff2') format('woff2'),
+        url('fonts/CeraPro-Medium.woff') format('woff'),
+        url('fonts/CeraPro-Medium.ttf') format('truetype'),
+        url('fonts/CeraPro-Medium.svg#CeraPro-Medium') format('svg');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    src: url('fonts/SegoeUI-Italic.eot');
-    src: local('Segoe UI Italic'), local('SegoeUI-Italic'),
-        url('fonts/SegoeUI-Italic.eot') format('embedded-opentype'),
-        url('fonts/SegoeUI-Italic.woff2') format('woff2'),
-        url('fonts/SegoeUI-Italic.woff') format('woff'),
-        url('fonts/SegoeUI-Italic.ttf') format('truetype');
+    font-family: 'Cera Pro';
+    src: url('fonts/CeraPro-Italic.eot');
+    src: url('fonts/CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/CeraPro-Italic.woff2') format('woff2'),
+        url('fonts/CeraPro-Italic.woff') format('woff'),
+        url('fonts/CeraPro-Italic.ttf') format('truetype'),
+        url('fonts/CeraPro-Italic.svg#CeraPro-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Bison';
+    src: url('fonts/Bison-Bold.eot');
+    src: url('fonts/Bison-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Bison-Bold.woff2') format('woff2'),
+        url('fonts/Bison-Bold.woff') format('woff'),
+        url('fonts/Bison-Bold.ttf') format('truetype'),
+        url('fonts/Bison-Bold.svg#Bison-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
   
 .light-link{
@@ -108,90 +205,8 @@
 
 }
  
-.bg-grad{
-  background: linear-gradient(215.09deg, #104233 0%, #B8D245 100%);
-
-}
-.bg-grad-green{
-  opacity: 0.75; 
-  background: linear-gradient(180deg, #B3CF38 0%, #104233 100%);
-
-}
-
-
-
-/* -------------------- nav links  ---------------------- */
-
  
-.active:after {
-
-content: " ";
-position: absolute;
-bottom: -8px;
-display: block;
-width: 100%;
-border-bottom: 5px solid #B3CF38;
-border-radius: 20px;
-}
-
-.active img{
-  filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
-}
-.active p{
-  color:#B3CF38;
-}
-
-.active span{
-  color:#B3CF38;
-}
-
  
-.non-active:hover:after {
-content: " ";
-position: absolute;
-bottom: -8px;
-display: block;
-width: 100%;
-border-bottom: 5px solid #B3CF38;
-border-radius: 20px;
-}
-
-.non-active:hover img {
-  filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
-  color: #B3CF38;
-
-} 
- 
-
-
-.non-active:hover p{ 
-  color: #B3CF38;
-
-} 
-
-.non-active:hover span{ 
-  color: #B3CF38;
-
-} 
-
-img.drop:after{
-  content: url('../assets/images/ic_NavDropdown.svg');
-    width: 8px;
-    margin-left: 5px;
- }
-
-
-
-/* ------- sub nav links -------- */
-
-.selected p{
-  color: #B3CF38;
-}
-
-.non-selected:hover p{ 
-  color: #B3CF38;
-
-} 
 
 
 .shadow-box{
@@ -199,18 +214,7 @@ img.drop:after{
   overflow:hidden;
 }
 
-
-/* ---------------------------------------- */
-  
-.action-hover:hover{
-  filter: invert(60%) sepia(27%) saturate(1047%) hue-rotate(111deg) brightness(100%) contrast(89%);
-} 
  
- 
-.catego  {
-      @apply w-28 h-24 2xs:w-36 2xs:h-32 sm:w-40 sm:h-36 mx-auto;
-   }
-
 
 /* --------Css for toogle button ---------- */
 
@@ -237,117 +241,7 @@ input:checked ~ .day {
  
 
 
-/* ---------------------- event detail page ------------------------ */
-
- .green-filter{
-
-  filter: invert(60%) sepia(27%) saturate(1047%) hue-rotate(111deg) brightness(100%) contrast(89%);
- }
- 
- 
-/******  Star Rating Widget *****/
-
-.rating { 
-  border: none;
-  float: left;
-}
-
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  font-size: 2em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-
-.rating > label { 
- color: #ddd; 
- float: right; 
-}
-
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  cursor:pointer; } /* hover previous stars in list */
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFD700[];   cursor:pointer;} 
-
-
-/* -------------------------------- */
-
-.tab-content {
-@apply transition-all ease-linear duration-500 overflow-hidden max-h-0;
-} 
-
-input:checked + .tab-label{
-  @apply  bg-gray-100;
-}
-
-input:checked + .tab-label .tab-arrow {
- @apply rotate-180 transform transition-all ease-linear duration-500; 
-  
-}
-
-input:checked ~ .tab-content {
- @apply  border-t border-lime overflow-auto transition-max-height ease-linear duration-500 max-h-screen;
-}
-
-
- 
-
-input:checked + .comment-section .tab-arrow {
- @apply rotate-180 transform transition-all ease-linear duration-500; 
-  
-}
-
-input:checked ~ .tab-content {
- @apply  border-t border-lime overflow-auto transition-all ease-linear duration-500 max-h-screen;
-}
-
-
-/* --------- tooltip ------------- */
-.rotate-45 {
-        --transform-rotate: 45deg;
-        transform: rotate(45deg);
-    }
-
-    .group:hover .group-hover\:flex {
-        display: flex;
-    }
-
-/* Icon button */
-.btnIcon:hover img{
- filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(200%) contrast(100%);
-@apply transition-all ease-linear duration-500;
-    }
-
-.filter-white{
-      filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(200%) contrast(100%);
-    }
-
-
- .filter-lime{
-filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%) contrast(87%);
-
- }
-
-
- div.floating-element + div + img {
-   @apply hover:scale-110 transform cursor-pointer transition ease-in-out duration-500;
- }
-
-  
-
- #my-box{
-            display: flex;
-            height: 0;
-            padding-bottom: 100%; 
-            width: 100%;
-          }
-
+ /* --------square box---------- */
 .my-box{
             display: flex;
             height: 0;
@@ -355,49 +249,4 @@ filter: invert(0%) sepia(12%) saturate(2427%) hue-rotate(19deg) brightness(100%)
             width: 100%;
           }
 
-/*header div box in event details page */
-
-.outer-div {
-    height: 60vh;
-  }
-  .inner-div {
-    height: 45vh;
-    
-  }
-  
-  
-@media screen and (min-width: 480px) {
-  .outer-div {
-    height: 65vh;
-  }
-  .inner-div {
-    height: 50vh;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .outer-div {
-    height: 45vh;
-  }
-  .inner-div {
-    height: 30vh;
-  }
-}
-
-@media screen and (min-width: 850px) {
-   .outer-div {
-    height: 40vh;
-  }
-  .inner-div {
-    height: 30vh;
-  }
-}
-
-@media screen and (min-width: 1080px) {
-   .outer-div {
-    height: 65vh;
-  }
-  .inner-div {
-    height: 50vh;
-  }
-}
+ 

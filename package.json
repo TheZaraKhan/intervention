@@ -1,10 +1,11 @@
 {
-  "name": "MYLE",
+  "name": "coffeeshop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite --host",
+    "start": "npm start",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -12,13 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.9",
     "vite": "^2.5.3"
   },
-  "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.1"
-  }
+  "dependencies": {}
 }
