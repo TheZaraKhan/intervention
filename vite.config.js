@@ -9,4 +9,11 @@ module.exports = {
       },
     },
   },
+  vite: {
+    server: {
+      fs: {
+        strict: false,
+      },
+    },
+  },
 };

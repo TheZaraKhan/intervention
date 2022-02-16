@@ -8,12 +8,790 @@
    <title>Coffee Shop</title>
    <link rel="stylesheet" href="/css/tailwind.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   <!-- <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" /> -->
 </head>
 
 <body>
-   <div class="w-full h-screen flex items-center">
-      Hello world
+   <!-- ***************************************    Section 1            *************************************** -->
+   <section id="hero">
+      <div class="w-full h-screen overflow-hidden bg-cover  " style=" background-image: url(/assets/hero-red.png);">
+         <div class=" bg-dark_red w-full text-center">
+            <p class=" py-2 text-xs  text-white">FREE Delivery in the UAE for orders above <span class=" text-mustard">
+                  120 AED
+               </span> - International deliveries at discounted rates*
+            </p>
+         </div>
+         <div class=" hidden lg:flex relative h-full w-full">
+            <div class="absolute right-0   h-full flex items-center">
+               <img src="/assets/coffee-header.png" class=" lg:h-3/6 h-2/6 xl:h-4/6" alt="">
+            </div>
+            <div class="absolute   h-full flex items-center">
+               <div class=" xl:px-10 px-4  ">
+                  <h1 class=" xl:text-10xl lg:text-9xl md:text-8xl text-7xl font-Bison text-mustard">INTELLECT</h1>
+                  <h1 class="xl:text-10xl lg:text-9xl md:text-8xl text-7xl font-Bison text-white">THE JOURNEY OF COFFEE
+                  </h1>
+                  <button
+                     class="ml-3 mt-5 py-3 px-6 text-xs cursor-pointer z-0 hover:text-white bg-white hover:bg-red-400 transform hover:scale-110 ease-in-out  duration-500">SHOP
+                     NOW</button>
+               </div>
+            </div>
+            <div class=" lg:block hidden relative max-h-44 w-full">
+               <div class="w-full mx-auto  flex flex-wrap py-10  xl:px-10 px-4 flex-col md:flex-row items-center">
+                  <div class=" md:my-2  ">
+                     <a href="/" class=" ">
+                        <img alt="Coffee shop" class=" xl:h-9  h-6 " id="logo" src="/assets/logo.png" />
+                     </a>
+                  </div>
+                  <nav class="mx-auto text-gray-700 flex  justify-evenly flex-wrap items-center text-base ">
+                     <a href="#" class=" nav-links">
+                        Coffee
+                     </a>
+                     <a href="#" class=" nav-links">
+                        Equipment
+                     </a>
+                     <a href="#" class=" nav-links">
+                        Intellect showroom
+                     </a>
+                     <a href="#" class=" nav-links">
+                        Intellect story
+                     </a>
+                     <a href="#" class=" nav-links">
+                        Coffee On wheels
+                     </a>
+                     <a href="#" class=" nav-links">
+                        Coffee Insights
+                     </a>
+                     <a href="#" class=" nav-links">
+                        Contact us
+                     </a>
+                  </nav>
+                  <a href="#" class=" nav-links  transform hover:scale-110 ease-in-out  duration-500">
+                     <img src="/assets/search.png" alt="">
+                  </a><a href="#" class=" nav-links  transform hover:scale-110 ease-in-out  duration-500">
+                     <img src="/assets/person.png" alt="">
+                  </a><a href="#" class=" nav-links   transform hover:scale-110 ease-in-out  duration-500">
+                     <img src="/assets/cart.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class=" block lg:hidden ">
+            <div class=" absolute  bottom-32 w-full  right-0">
+               <img src="/assets/coffee-header.png" class=" sm:w-4/5 w-4/5 float-right " alt="">
+            </div>
+            <div class="w-full flex">
+               <div class="flex-1">
+                  <a href="/">
+                     <img alt="Coffee Shop Logo" class="h-8 m-4" src="/assets/logo.png" />
+                  </a>
+               </div>
+               <div class=" flex-1 text-right "><i class="burger text-xl font-light  fa fa-bars  m-4 text-white"></i>
+               </div>
+               <div class=" menu h-full top-0 hidden  z-20 right-0 fixed bg-dark_red w-auto">
+                  <div class=" flex flex-col">
+                     <i class=" cross  text-xl font-light float-right text-right fa fa-times  m-4 text-white "></i>
+                     <a href="#" class=" mx-5 item nav-links">
+                        Coffee
+                     </a>
+                     <a href="#" class="  mx-5 item nav-links">
+                        Equipment
+                     </a>
+                     <a href="#" class="  mx-5 item nav-links">
+                        Intellect showroom
+                     </a>
+                     <a href="#" class="  mx-5 item nav-links">
+                        Intellect story
+                     </a>
+                     <a href="#" class="  mx-5 item nav-links">
+                        Coffee On wheels
+                     </a>
+                     <a href="#" class="  mx-5 item nav-links">
+                        Coffee Insights
+                     </a>
+                     <a href="#" class=" mx-5 item nav-links">
+                        Contact us
+                     </a>
+                  </div>
+                  <div class="flex mt-8 flex-row  mx-5">
+                     <a href="#" class="menu nav-links ">
+                        <img src="/assets/search.png" alt="">
+                     </a><a href="#" class="menu nav-links">
+                        <img src="/assets/person.png" alt="">
+                     </a><a href="#" class="menu nav-links">
+                        <img src="/assets/cart.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class=" px-4 relative h-70vh flex  items-center  ">
+               <div>
+                  <h1 class=" sm:text-9xl xs:text-8xl  text-7xl font-Bison text-mustard">INTELLECT</h1>
+                  <h1 class="sm:text-9xl xs:text-8xl text-7xl font-Bison text-white">THE JOURNEY OF COFFEE
+                  </h1>
+                  <button
+                     class="ml-3 mt-5 py-3 px-6 text-xs cursor-pointer z-0 hover:text-white bg-white hover:bg-red-400 transform hover:scale-110 ease-in-out  duration-500">SHOP
+                     NOW</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class=" w-3/4 mx-auto -mt-6  ">
+         <img src="/assets/whatsapp.png"
+            class="h-12 bg-white rounded-full float-right shadow-xl hover:scale-110 transform duration-500 ease-in-out cursor-pointer"
+            alt="">
+      </div>
+   </section>
+   <!-- ***************************************             Section 2             *************************************** -->
+   <section>
+      <div class=" sm:w-3/4 w-full sm:px-0 px-5 relative py-72 mt-8 mx-auto ">
+         <h1 class="md:text-6xl   text-5xl  mx-auto font-Bison uppercase  leading-snug text-gray-700">
+            <span class="text-gray-300">Every coffee</span>
+            lover has preferences.
+            Whether
+            you’re<span class="text-gray-300"> shopping for a coffee</span> connoisseur
+            <br> or that someone who’s always drinking
+            <br> coffee on the go,<span class="text-gray-300"> we’ve got you covered.</span>
+         </h1>
+         <div class="absolute   sm:top-0 top-32 right-0 h-full">
+            <img src="assets/coffee-beans.png" class=" lg:h-1/2  sm:h-2/5 h-1/4   my-24" alt="">
+         </div>
+      </div>
+   </section>
+
+
+
+   <!-- ***************************************            Section 3         *************************************** -->
+
+   <section class=" w-full  ">
+      <div class="md:w-3/4 mx-auto w-full ">
+         <h3 class="  px-4   sm:text-5xl text-4xl text-gray-700 font-Bison"> Signature Blends for
+            you</h3>
+      </div>
+      <div class=" w-5/6 md:px-16 sm:px-10 px-4  mx-auto mt-10 mb-32 ">
+         <div class=" products  ">
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+            <div class="mx-2">
+               <div class="switch cursor-pointer  ">
+                  <div class="div_a border">
+                     <img src="/assets/product.png" class="w-full" alt="">
+                  </div>
+                  <div class="div_hover h-full  rounded-t-full overflow-hidden"><img src="/assets/product-replace.png"
+                        class="object-cover w-full h-full" alt="">
+                     <button
+                        class="w-full py-3 text-center absolute bottom-0 text-white bg-black  uppercase text-sm">Shop
+                        Now</button>
+                  </div>
+               </div>
+               <div class=" ">
+                  <p class="text-black  mt-3 text-sm">Signature Blend No 1</p>
+                  <p class="text-xs  text-gray-500">Tastes Like: Caramel, Almond, Chocolate</p>
+                  <p class="text-xs mt-3 font-bold text-black"> AED 95.30</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </section>
+
+
+
+
+
+   <!-- ***************************************            Section 4         *************************************** -->
+
+   <section class="" style=" background-image: url(/assets/hero-mustard.png);">
+      <div class=" w-full px-14 mx-auto flex py-20 gap-10 flex-wrap items-center">
+         <div class="sm:flex-1 flex-initial sm:order-2 order-1">
+            <img src="/assets/girl.png" alt="">
+         </div>
+         <div class="sm:flex-1 flex-initial md:pl-28 sm:pl-16 pl-6 sm:pr-0 pr-6     sm:order-1 order-2">
+            <h3 class="  sm:text-5xl text-4xl text-white font-Bison">The coffee-Lovers</h3>
+            <h1 class="xl:text-10xl sm:text-8xl text-7xl font-Bison text-white"> Holiday Gift Guide </h1>
+            <p class="text-white font-light mt-5 text-sm"> Lorem ipsum dolor sit amet, consectetur<br>
+               adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button
+               class=" mt-10 py-3 px-6 text-xs cursor-pointer z-0 hover:text-white bg-white hover:bg-mustard  transform hover:scale-110 ease-in-out  duration-500">SHOP
+               NOW</button>
+         </div>
+      </div>
+   </section>
+   <!-- ***************************************            Section 5         *************************************** -->
+   <section class="mt-32 ">
+      <div class="w-full ">
+         <h3 class=" sm:w-1/2 mx-auto  text-center sm:text-left sm:text-5xl text-4xl text-gray-700 font-Bison"> Featured
+            Equipments</h3>
+      </div>
+      <div class="w-full md:w-3/4 sm:w-11/12 sm:px-0 px-6  mt-16 mx-auto flex sm:flex-row flex-col items-center ">
+         <div class="sm:flex-1 sm:block hidden bg-gray-50  border overflow-hidden" style="border-top-left-radius: 250px;
+    border-bottom-left-radius: 250px;">
+            <img src="/assets/machine-1.png" class="  mx-auto w-2/5 py-20 " alt="">
+         </div>
+         <div class="sm:hidden flex-none  bg-gray-50  border overflow-hidden py-10 w-full">
+            <img src="/assets/machine-1.png" class="  mx-auto w-2/5  " alt="">
+         </div>
+         <div class="sm:flex-1 flex-none">
+            <div class="mx-auto mt-8 sm:mt-0 text-center sm:text-left sm:w-max w-full ">
+
+               <p class=" text-2xl  font-light ">W1 Series
+               </p>
+               <p class=" sm:ml-2 text-sm  text-gray-500 font-light">
+                  100 - 1500 gr.</p>
+
+               <button
+                  class=" sm:ml-2 mt-5 py-3 px-6 text-xs cursor-pointer z-0  text-white bg-black hover:bg-gray-700 transform hover:scale-110 ease-in-out  duration-500">ENQUIRE
+                  NOW</button>
+            </div>
+         </div>
+      </div>
+      <div
+         class="w-full md:w-3/4 sm:w-11/12 sm:px-0 px-6   sm:mt-0 mt-20   mx-auto flex sm:flex-row flex-col items-center ">
+
+         <div class="sm:hidden flex-none  bg-gray-50  border overflow-hidden py-10 w-full">
+            <img src="/assets/machine-1.png" class="  mx-auto w-2/5  " alt="">
+         </div>
+         <div class="sm:flex-1 flex-none">
+            <div class="mx-auto mt-8 sm:mt-0 text-center sm:text-left sm:w-max w-full ">
+
+               <p class=" text-2xl  font-light ">W1 Series
+               </p>
+               <p class=" sm:ml-2 text-sm  text-gray-500 font-light">
+                  100 - 1500 gr.</p>
+
+               <button
+                  class=" sm:ml-2 mt-5 py-3 px-6 text-xs cursor-pointer z-0  text-white bg-black hover:bg-gray-700 transform hover:scale-110 ease-in-out  duration-500">ENQUIRE
+                  NOW</button>
+            </div>
+         </div>
+         <div class="sm:flex-1 sm:block hidden bg-gray-50  border overflow-hidden" style="border-top-right-radius: 250px;
+                         border-bottom-right-radius: 250px;">
+            <img src="/assets/machine-2.png" class="  mx-auto w-2/5 py-40 " alt="">
+         </div>
+      </div>
+      <div
+         class="w-full md:w-3/4 sm:w-11/12 sm:px-0 px-6  sm:mt-0 mt-20 mx-auto flex sm:flex-row flex-col items-center ">
+         <div class="sm:flex-1 sm:block hidden bg-gray-50  border overflow-hidden" style="border-top-left-radius: 250px;
+                border-bottom-left-radius: 250px;">
+            <img src="/assets/machine-1.png" class="  mx-auto w-2/5 py-20 " alt="">
+         </div>
+         <div class="sm:hidden flex-none  bg-gray-50  border overflow-hidden py-10 w-full">
+            <img src="/assets/machine-1.png" class="  mx-auto w-2/5  " alt="">
+         </div>
+         <div class="sm:flex-1 flex-none">
+            <div class="mx-auto mt-8 sm:mt-0 text-center sm:text-left sm:w-max w-full ">
+
+               <p class=" text-2xl  font-light ">W1 Series
+               </p>
+               <p class=" sm:ml-2 text-sm  text-gray-500 font-light">
+                  100 - 1500 gr.</p>
+
+               <button
+                  class=" sm:ml-2 mt-5 py-3 px-6 text-xs cursor-pointer z-0  text-white bg-black hover:bg-gray-700 transform hover:scale-110 ease-in-out  duration-500">ENQUIRE
+                  NOW</button>
+            </div>
+         </div>
+      </div>
+      <div class="  w-full text-center mt-16"><button
+            class="  py-3 px-6 text-xs cursor-pointer z-0  border-black hover:border-0 border-2 hover:border-gray-700 text-black bg-white hover:bg-gray-700 hover:text-white transform hover:scale-110 ease-in-out uppercase duration-500">
+            view all Equipment</button></div>
+   </section>
+   <!-- ***************************************            Section 6         *************************************** -->
+   <section class="relative mt-40">
+
+      <div class="   w-full   overflow-hidden" style=" background-image: url(/assets/hero-maroon.png);  border-top-left-radius: 250px;
+                border-top-right-radius: 250px;">
+         <div class="w-5/6 mx-auto">
+            <h3 class="  mt-24 text-center sm:text-5xl  text-4xl text-white font-Bison"> Total Coffee Solutions <br>
+               for Foodservice, Hospitality and More.</h3>
+            <p class="  text-gray-200 text-center font-light  mt-5 opacity-80 text-sm"> Lorem ipsum dolor sit amet,
+               consectetur<br>
+               adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+         </div>
+         <img src="/assets/coffee-section.png" class=" md:w-1/3 sm:w-2/4 w-5/6  -mt-5 px-10 mx-auto" alt="">
+
+      </div>
+      <div class="absolute bottom-8 w-full text-center">
+         <button
+            class=" mt-10 py-3 px-6 text-xs cursor-pointer z-0 hover:text-white bg-white hover:bg-maroon   transform hover:scale-110 ease-in-out  duration-500">SHOP
+            NOW</button>
+      </div>
+
+   </section>
+   <!-- ***************************************            Section 7         *************************************** -->
+   <section class=" w-full mt-40 ">
+      <div class="w-full ">
+         <h3 class="   text-center  sm:text-5xl text-4xl text-gray-700 font-Bison"> Coffee
+            Insights</h3>
+      </div>
+      <div class=" w-5/6 md:px-16 sm:px-10 px-0  mx-auto  ">
+         <div class=" articles  ">
+
+            <div
+               class=" mx-4 my-5 bg-white shadow-md cursor-pointer hover:scale-105 transform duration-500 ease-in-out">
+               <img src="/assets/insights-1.png" class="w-full" alt="">
+               <div class="p-10">
+
+                  <p class="  text-xs  text-gray-500 font-light">
+                     15th DEC, 2021</p>
+                  <p class=" text-lg  ">Manual Brewing Methods
+                  </p>
+
+               </div>
+            </div>
+            <div
+               class=" mx-4 my-5  bg-white shadow-md cursor-pointer hover:scale-105 transform duration-500 ease-in-out">
+               <img src="/assets/insights-2.png" class="w-full" alt="">
+               <div class="p-10">
+
+                  <p class="  text-xs  text-gray-500 font-light">
+                     15th DEC, 2021</p>
+                  <p class=" text-lg  ">Manual Brewing Methods
+                  </p>
+
+               </div>
+            </div>
+            <div
+               class=" mx-4 my-5  bg-white shadow-md cursor-pointer hover:scale-105 transform duration-500 ease-in-out">
+               <img src="/assets/insights-3.png" class="w-full" alt="">
+               <div class="p-10">
+
+                  <p class="  text-xs  text-gray-500 font-light">
+                     15th DEC, 2021</p>
+                  <p class=" text-lg  ">Manual Brewing Methods
+                  </p>
+
+               </div>
+            </div>
+            <div
+               class=" mx-4 my-5  bg-white shadow-md cursor-pointer hover:scale-105 transform duration-500 ease-in-out">
+               <img src="/assets/insights-2.png" class="w-full" alt="">
+               <div class="p-10">
+
+                  <p class="  text-xs  text-gray-500 font-light">
+                     100 - 1500 gr.</p>
+                  <p class=" text-lg  ">Manual Brewing Methods
+                  </p>
+
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+
+      <div class="  w-full text-center mt-6"><button
+            class=" w-52 pt-4 pb-3 px-6 text-xs cursor-pointer z-0    text-white bg-maroon hover:bg-opacity-70   transform hover:scale-110 ease-in-out uppercase duration-500">
+            view all </button></div>
+
+
+
+
+   </section>
+
+
+
+   <!-- ***************************************            Section 8         *************************************** -->
+
+   <section class="mt-44">
+      <div class="w-full relative ">
+         <div class="instagram">
+            <img src="/assets/insta-1.png" style="margin:2px;" alt="">
+            <img src="/assets/insta-2.png" style="margin:2px;" alt="">
+            <img src="/assets/insta-3.png" style="margin:2px;" alt="">
+            <img src="/assets/insta-4.png" style="margin:2px;" alt="">
+            <img src="/assets/insta-5.png" style="margin:2px;" alt="">
+            <img src="/assets/insta-6.png" style="margin:2px;" alt="">
+
+         </div>
+         <div class="absolute h-full top-0 flex items-center w-full">
+            <p class="  uppercase mx-auto text-center text-white font-medium text-sm "> <img src="/assets/instagram.png"
+                  class=" inline-block" alt="">
+               <span> #INTELLECTCOFFEE </span>
+            </p>
+         </div>
+      </div>
+   </section>
+
+   <!-- ***************************************            Section 9         *************************************** -->
+   <div class="w-full">
+
+      <div class="grid md:grid-cols-9 xxs:grid-cols-2 grid-cols-1 mt-16 lg:w-3/4 lg:px-0 mx-auto px-4 w-full">
+         <div class=" mt-14 md:col-span-2 col-span-1">
+            <p class="uppercase text-blood  text-sm font-medium mb-10"> QUICK LINKS</p>
+            <ul class="text-xs text-gray-500 ">
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Contact
+                     Us</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Shipping
+                     Info</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Privacy
+                     Policy</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Terms &
+                     Conditions</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Download
+                     broucher</a>
+               </li>
+            </ul>
+         </div>
+         <div class="mt-14 md:col-span-2 col-span-1">
+            <p class="uppercase text-blood  text-sm font-medium mb-10"> support</p>
+            <ul class="text-xs text-gray-500 ">
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Contact
+                     Us</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Shipping
+                     Info</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Privacy
+                     Policy</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Terms &
+                     Conditions</a>
+               </li>
+               <li class="my-2"><a class="hover:text-mustard   transition ease-in-out duration-500" href="">Download
+                     broucher</a>
+               </li>
+
+            </ul>
+         </div>
+         <div class=" mt-14 md:col-span-2 col-span-1">
+            <p class="uppercase text-blood  text-sm font-medium mb-10"> contact us</p>
+            <p class="text-xs leading-loose text-gray-500 mb-10 ">
+               Intellect
+               Coffee<br> Dubai, United Arab Emirates
+            </p>
+
+
+            <p class="text-sm leading-loose text-blood   font-medium   ">
+               Phone
+            </p>
+
+            <p class="text-xs leading-loose text-gray-500 mb-10 ">
+               +971 56034545
+            </p>
+            <p class="text-sm leading-loose text-blood   font-medium  ">
+               Email
+            </p>
+            <p class="text-xs leading-loose underline text-gray-500 mb-10 ">
+               Info@intellectcoffee.com
+            </p>
+         </div>
+
+         <div class="mt-14 md:col-span-3 col-span-1">
+            <p class="uppercase text-blood text-sm font-medium mb-10"> subscribe to our newsletter </p>
+
+            <div class="flex h-12 w-full "> <input type="email" class=" outline-none border  text-xs p-4 w-full"
+                  placeholder="Email Address">
+               <button
+                  class="bg-blood hover:bg-maroon transition duration-500 ease-in-out h-12 w-14 text-white py-2 pr-2 text-2xl font-extralight ">
+                  <p class=" rotate-90 transform">&#8963;</p>
+               </button>
+
+            </div>
+
+
+            <div class="flex gap-4 my-10">
+               <div
+                  class=" hover-fill flex items-center bg-white hover:bg-maroon hover:scale-105 transform w-8 h-8 rounded-full cursor-pointer transition duration-500 ease-in-out ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     class="fill-gray cursor-pointer mx-auto hover:fill-white" viewBox="0 0 24 24">
+                     <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+
+               </div>
+               <div
+                  class=" hover-fill flex items-center bg-white hover:bg-maroon hover:scale-105 transform w-8 h-8 rounded-full cursor-pointer transition duration-500 ease-in-out ">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     class="fill-gray cursor-pointer mx-auto hover:fill-white" viewBox="0 0 24 24">
+                     <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+
+               </div>
+               <div
+                  class=" hover-fill flex items-center bg-white hover:bg-maroon hover:scale-105 transform w-8 h-8 rounded-full cursor-pointer transition duration-500 ease-in-out ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     class="fill-gray cursor-pointer mx-auto hover:fill-white" viewBox="0 0 24 24">
+                     <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+
+               </div>
+            </div>
+
+
+         </div>
+
+
+      </div>
    </div>
+
+   <hr>
+   <div class=" sm:w-3/4 w-full mx-auto mt-6 mb-16 px-4 sm:px-0 ">
+      <p class="text-xs leading-loose text-gray-500  ">
+         © 2021 Intellect Coffee. All Rights Reserved.
+
+      </p>
+   </div>
+
+
+
+
+
+
+
+
+   <script> // hide the Menu
+      $(document).ready(function () {
+         $(".burger").click(function () {
+            $(".menu").show(100);
+            $(".burger").hide(100);
+         });
+         $(".item").click(function () {
+            $(".menu").hide(100);
+            $(".burger").show(100);
+         });
+         $(".cross").click(function () {
+            $(".menu").hide(100);
+            $(".burger").show(100);
+         });
+      });
+   </script>
+   <script>
+      $('.articles').slick({
+         dots: false,
+         infinite: true,
+         speed: 300,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         arrows: true,
+         responsive: [
+            {
+               breakpoint: 1024,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+
+               }
+            },
+            {
+               breakpoint: 800,
+               settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+               }
+            },
+            {
+               breakpoint: 500,
+               settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+               }
+            },
+
+         ]
+      });
+      document.querySelector('.slick-prev').innerHTML = '<img  class="absolute md:w-12 w-8  md:-left-20  sm:-left-10 -left-7 z-10" style="top:43%;" src="/assets/icon-left.png">'
+      document.querySelector('.slick-next').innerHTML = '<img  class="absolute md:w-12 w-8  md:-right-20 sm:-right-10 -right-7 z-10" style="top:43%"  src="/assets/icon-right.png">'
+
+
+
+      $('.products').slick({
+         dots: false,
+         infinite: true,
+         speed: 300,
+         slidesToShow: 4,
+         slidesToScroll: 1,
+         arrows: true,
+         responsive: [
+            {
+               breakpoint: 1024,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+
+               }
+            },
+            {
+               breakpoint: 800,
+               settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+               }
+            },
+            {
+               breakpoint: 500,
+               settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+               }
+            },
+
+         ]
+      });
+      document.querySelector('.slick-prev').innerHTML = '<img  class="absolute md:w-12  w-8 md:-left-20  sm:-left-10 -left-7 z-10" style="top:43%;" src="/assets/icon-left.png">'
+      document.querySelector('.slick-next').innerHTML = '<img  class="absolute md:w-12 w-8  md:-right-20 sm:-right-10 -right-7 z-10" style="top:43%"  src="/assets/icon-right.png">'
+
+
+
+      $('.instagram').slick({
+         dots: false,
+         infinite: true,
+         speed: 300,
+         slidesToShow: 6,
+         slidesToScroll: 1,
+         arrows: false,
+         responsive: [
+            {
+               breakpoint: 1024,
+               settings: {
+                  slidesToShow: 5,
+                  slidesToScroll: 1,
+
+               }
+            },
+            {
+               breakpoint: 600,
+               settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1
+               }
+            },
+            {
+               breakpoint: 500,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+               }
+            },
+
+         ]
+      });
+      document.querySelector('.slick-prev').innerHTML = '<img  class="absolute md:w-12 w-8 md:-left-20  -left-10 z-10" style="top:43%;" src="/assets/icon-left.png">'
+      document.querySelector('.slick-next').innerHTML = '<img  class="absolute md:w-12 w-8  md:-right-20  -right-10 z-10" style="top:43%"  src="/assets/icon-right.png">'
+
+
+   </script>
+
 </body>
 
 </html>

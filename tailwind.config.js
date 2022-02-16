@@ -3,8 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Segoe UI"', "sans-serif"],
+      sans: ['"Cera Pro"', "sans-serif"],
+      Bison: ["Bison"],
     },
+    fill: (theme) => ({
+      gray: "#737373",
+      white: "#fff",
+    }),
     screens: {
       "2xs": "330px",
       xxs: "410px",
@@ -12,7 +17,8 @@ module.exports = {
       sm: "700px",
       md: "850px",
       lg: "1080px",
-      xl: "1200px",
+
+      xl: "1300px",
       "2xl": "1440px",
       "3xl": "1600px",
       "4xl": "1800px",
@@ -22,10 +28,16 @@ module.exports = {
     },
 
     extend: {
+      colors: {
+        dark_red: "#492b29",
+        blood: "#CA333B",
+        maroon: "#831b43",
+        mustard: "#e2a466",
+      },
       backgroundImage: (theme) => ({
-        // login: "url('/assets/images/bg-login.jpg')",
-        // signup: "url('/assets/images/bg-signup.jpg')",
-        // background: "url('/assets/images/background.png')",
+        herored: "url('/assets/hero-red')",
+        heromaroon: "url('/assets/hero-maroon')",
+        heromustard: "url('/assets/hero-mustard')",
       }),
 
       maxWidth: {
@@ -44,24 +56,6 @@ module.exports = {
         "-1": "-1",
       },
 
-      colors: {
-        green: {
-          1000: "#0C3020",
-          900: "#145143",
-          800: "#28816D",
-          400: "#209A75",
-          50: "#E9F5F2",
-        },
-        red: {
-          200: "#FE6B6B",
-          300: "#FB3737",
-        },
-        gray: {
-          150: "#EFEFEF",
-        },
-        mute: "#F4F7E9",
-        lime: "#B3CF38",
-      },
       height: {
         85: "23.9rem",
         2.5: "0.7rem",
@@ -72,6 +66,10 @@ module.exports = {
         18: "4.5rem",
       },
       fontSize: {
+        "10xl": "100px",
+        "9xl": "80px",
+        "8xl": "70px",
+        "6xl": "4rem",
         md: "14px",
         "2xs": "10px",
         "3xs": "9px",

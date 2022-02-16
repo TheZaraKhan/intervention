@@ -2,251 +2,242 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-MediumItalic.eot');
-    src: url('fonts/CeraPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-MediumItalic.woff2') format('woff2'),
-        url('fonts/CeraPro-MediumItalic.woff') format('woff'),
-        url('fonts/CeraPro-MediumItalic.ttf') format('truetype'),
-        url('fonts/CeraPro-MediumItalic.svg#CeraPro-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-MediumItalic.eot");
+  src: url("fonts/CeraPro-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-MediumItalic.woff2") format("woff2"),
+    url("fonts/CeraPro-MediumItalic.woff") format("woff"),
+    url("fonts/CeraPro-MediumItalic.ttf") format("truetype"),
+    url("fonts/CeraPro-MediumItalic.svg#CeraPro-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-LightItalic.eot');
-    src: url('fonts/CeraPro-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-LightItalic.woff2') format('woff2'),
-        url('fonts/CeraPro-LightItalic.woff') format('woff'),
-        url('fonts/CeraPro-LightItalic.ttf') format('truetype'),
-        url('fonts/CeraPro-LightItalic.svg#CeraPro-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-LightItalic.eot");
+  src: url("fonts/CeraPro-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-LightItalic.woff2") format("woff2"),
+    url("fonts/CeraPro-LightItalic.woff") format("woff"),
+    url("fonts/CeraPro-LightItalic.ttf") format("truetype"),
+    url("fonts/CeraPro-LightItalic.svg#CeraPro-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-BoldItalic.eot');
-    src: url('fonts/CeraPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-BoldItalic.woff2') format('woff2'),
-        url('fonts/CeraPro-BoldItalic.woff') format('woff'),
-        url('fonts/CeraPro-BoldItalic.ttf') format('truetype'),
-        url('fonts/CeraPro-BoldItalic.svg#CeraPro-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-BoldItalic.eot");
+  src: url("fonts/CeraPro-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-BoldItalic.woff2") format("woff2"),
+    url("fonts/CeraPro-BoldItalic.woff") format("woff"),
+    url("fonts/CeraPro-BoldItalic.ttf") format("truetype"),
+    url("fonts/CeraPro-BoldItalic.svg#CeraPro-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Thin.eot');
-    src: url('fonts/CeraPro-Thin.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Thin.woff2') format('woff2'),
-        url('fonts/CeraPro-Thin.woff') format('woff'),
-        url('fonts/CeraPro-Thin.ttf') format('truetype'),
-        url('fonts/CeraPro-Thin.svg#CeraPro-Thin') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Thin.eot");
+  src: url("fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Thin.woff2") format("woff2"),
+    url("fonts/CeraPro-Thin.woff") format("woff"),
+    url("fonts/CeraPro-Thin.ttf") format("truetype"),
+    url("fonts/CeraPro-Thin.svg#CeraPro-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Bold.eot');
-    src: url('fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Bold.woff2') format('woff2'),
-        url('fonts/CeraPro-Bold.woff') format('woff'),
-        url('fonts/CeraPro-Bold.ttf') format('truetype'),
-        url('fonts/CeraPro-Bold.svg#CeraPro-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Bold.eot");
+  src: url("fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("fonts/CeraPro-Bold.woff") format("woff"),
+    url("fonts/CeraPro-Bold.ttf") format("truetype"),
+    url("fonts/CeraPro-Bold.svg#CeraPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Black.eot');
-    src: url('fonts/CeraPro-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Black.woff2') format('woff2'),
-        url('fonts/CeraPro-Black.woff') format('woff'),
-        url('fonts/CeraPro-Black.ttf') format('truetype'),
-        url('fonts/CeraPro-Black.svg#CeraPro-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Black.eot");
+  src: url("fonts/CeraPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Black.woff2") format("woff2"),
+    url("fonts/CeraPro-Black.woff") format("woff"),
+    url("fonts/CeraPro-Black.ttf") format("truetype"),
+    url("fonts/CeraPro-Black.svg#CeraPro-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Regular.eot');
-    src: url('fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Regular.woff2') format('woff2'),
-        url('fonts/CeraPro-Regular.woff') format('woff'),
-        url('fonts/CeraPro-Regular.ttf') format('truetype'),
-        url('fonts/CeraPro-Regular.svg#CeraPro-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Regular.eot");
+  src: url("fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("fonts/CeraPro-Regular.woff") format("woff"),
+    url("fonts/CeraPro-Regular.ttf") format("truetype"),
+    url("fonts/CeraPro-Regular.svg#CeraPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-BlackItalic.eot');
-    src: url('fonts/CeraPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-BlackItalic.woff2') format('woff2'),
-        url('fonts/CeraPro-BlackItalic.woff') format('woff'),
-        url('fonts/CeraPro-BlackItalic.ttf') format('truetype'),
-        url('fonts/CeraPro-BlackItalic.svg#CeraPro-BlackItalic') format('svg');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-BlackItalic.eot");
+  src: url("fonts/CeraPro-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-BlackItalic.woff2") format("woff2"),
+    url("fonts/CeraPro-BlackItalic.woff") format("woff"),
+    url("fonts/CeraPro-BlackItalic.ttf") format("truetype"),
+    url("fonts/CeraPro-BlackItalic.svg#CeraPro-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-ThinItalic.eot');
-    src: url('fonts/CeraPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-ThinItalic.woff2') format('woff2'),
-        url('fonts/CeraPro-ThinItalic.woff') format('woff'),
-        url('fonts/CeraPro-ThinItalic.ttf') format('truetype'),
-        url('fonts/CeraPro-ThinItalic.svg#CeraPro-ThinItalic') format('svg');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-ThinItalic.eot");
+  src: url("fonts/CeraPro-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-ThinItalic.woff2") format("woff2"),
+    url("fonts/CeraPro-ThinItalic.woff") format("woff"),
+    url("fonts/CeraPro-ThinItalic.ttf") format("truetype"),
+    url("fonts/CeraPro-ThinItalic.svg#CeraPro-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Light.eot');
-    src: url('fonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Light.woff2') format('woff2'),
-        url('fonts/CeraPro-Light.woff') format('woff'),
-        url('fonts/CeraPro-Light.ttf') format('truetype'),
-        url('fonts/CeraPro-Light.svg#CeraPro-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Light.eot");
+  src: url("fonts/CeraPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Light.woff2") format("woff2"),
+    url("fonts/CeraPro-Light.woff") format("woff"),
+    url("fonts/CeraPro-Light.ttf") format("truetype"),
+    url("fonts/CeraPro-Light.svg#CeraPro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Medium.eot');
-    src: url('fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Medium.woff2') format('woff2'),
-        url('fonts/CeraPro-Medium.woff') format('woff'),
-        url('fonts/CeraPro-Medium.ttf') format('truetype'),
-        url('fonts/CeraPro-Medium.svg#CeraPro-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Medium.eot");
+  src: url("fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Medium.woff2") format("woff2"),
+    url("fonts/CeraPro-Medium.woff") format("woff"),
+    url("fonts/CeraPro-Medium.ttf") format("truetype"),
+    url("fonts/CeraPro-Medium.svg#CeraPro-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Cera Pro';
-    src: url('fonts/CeraPro-Italic.eot');
-    src: url('fonts/CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/CeraPro-Italic.woff2') format('woff2'),
-        url('fonts/CeraPro-Italic.woff') format('woff'),
-        url('fonts/CeraPro-Italic.ttf') format('truetype'),
-        url('fonts/CeraPro-Italic.svg#CeraPro-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Cera Pro";
+  src: url("fonts/CeraPro-Italic.eot");
+  src: url("fonts/CeraPro-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/CeraPro-Italic.woff2") format("woff2"),
+    url("fonts/CeraPro-Italic.woff") format("woff"),
+    url("fonts/CeraPro-Italic.ttf") format("truetype"),
+    url("fonts/CeraPro-Italic.svg#CeraPro-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bison';
-    src: url('fonts/Bison-Bold.eot');
-    src: url('fonts/Bison-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Bison-Bold.woff2') format('woff2'),
-        url('fonts/Bison-Bold.woff') format('woff'),
-        url('fonts/Bison-Bold.ttf') format('truetype'),
-        url('fonts/Bison-Bold.svg#Bison-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Bison";
+  src: url("fonts/Bison-Bold.eot");
+  src: url("fonts/Bison-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Bison-Bold.woff2") format("woff2"),
+    url("fonts/Bison-Bold.woff") format("woff"),
+    url("fonts/Bison-Bold.ttf") format("truetype"),
+    url("fonts/Bison-Bold.svg#Bison-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
+.nav-links {
+  @apply text-sm text-white  hover:text-mustard cursor-pointer xl:px-4 px-2 font-light py-1 transition ease-in-out duration-500;
+}
 
-  
-.light-link{
-      @apply text-green-400 text-sm  font-extralight  cursor-pointer   hover:text-green-900 transition ease-in-out duration-500 ;
-  }
-
-  
 /* ----------CSS for Div in signup interested categories section----------- */
 .switch {
-	position: relative;
+  position: relative;
 }
 
 .div_a {
-	position: relative;
-	opacity: 1;
-	transition:600ms;
+  position: relative;
+  opacity: 1;
+  transition: 600ms;
 }
 
 .div_hover {
-	position: absolute;
-	opacity: 0;
-  top:0;
-
+  position: absolute;
+  opacity: 0;
+  top: 0;
 }
 
 .switch:hover .div_hover {
-	opacity: 1; 
+  opacity: 1;
   transition-duration: 300ms;
   transition-timing-function: linear;
-  z-index:11;
-
-}
- 
- 
- 
-
-
-.shadow-box{
-  box-shadow: 0 0 7px 0 rgba(0,0,0,0.2);     
-  overflow:hidden;
+  z-index: 11;
 }
 
- 
+.switch:hover .div_a {
+  opacity: 0;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  z-index: 11;
+}
+
+.shadow-box {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
 /* --------Css for toogle button ---------- */
 
-.dot-shadow{
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.5);
+.dot-shadow {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
-.dot-line{
-  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
-
+.dot-line {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 }
 input:checked ~ .dot-line {
-  background-color: #28816D;
-  
+  background-color: #28816d;
 }
-input:checked ~ .dot{
-transform: translateX(100%);
+input:checked ~ .dot {
+  transform: translateX(100%);
 }
- 
+
 input:checked ~ .day {
-  opacity:1;
-  
+  opacity: 1;
 }
 
- 
+/* --------square box---------- */
+.my-box {
+  display: flex;
+  height: 0;
+  padding-bottom: 100%;
+  width: 100%;
+}
 
-
- /* --------square box---------- */
-.my-box{
-            display: flex;
-            height: 0;
-            padding-bottom: 100%; 
-            width: 100%;
-          }
-
- 
+.hover-fill:hover svg {
+  @apply fill-white    transition duration-500 ease-in-out;
+}
