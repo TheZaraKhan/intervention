@@ -241,3 +241,13 @@ input:checked ~ .day {
 .hover-fill:hover svg {
   @apply fill-white    transition duration-500 ease-in-out;
 }
+
+/* .bg-herored {
+  background-image: url("../assets/hero-red.png");
+}
+.bg-heromaroon {
+  background-image: url("../assets/hero-maroon.png");
+}
+.bg-heromustard {
+  background-image: url("../assets/hero-mustard.png");
+} */

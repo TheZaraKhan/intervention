@@ -35,9 +35,9 @@ module.exports = {
         mustard: "#e2a466",
       },
       backgroundImage: (theme) => ({
-        herored: "url('/assets/hero-red')",
-        heromaroon: "url('/assets/hero-maroon')",
-        heromustard: "url('/assets/hero-mustard')",
+        herored: "url('/assets/hero-red.png')",
+        heromaroon: "url('/assets/hero-maroon.png')",
+        heromustard: "url('/assets/hero-mustard.png')",
       }),
 
       maxWidth: {
