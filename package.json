@@ -18,5 +18,10 @@
     "tailwindcss": "^2.2.9",
     "vite": "^2.5.3"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
   "dependencies": {}
 }
