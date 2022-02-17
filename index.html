@@ -13,6 +13,12 @@
    <link rel="stylesheet" href="/css/tailwind.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <!-- <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" /> -->
+   <!-- <style>
+      .slick-arrow {
+         display: none !important;
+      }
+   </style> -->
 </head>
 
 <body class="bg-white">
@@ -658,6 +664,8 @@
          slidesToShow: 3,
          slidesToScroll: 1,
          arrows: true,
+         prevArrow: '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-left-20 border border-mute rounded-full flex items-center   sm:-left-10  -left-6  z-10" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" >  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M120.33281,13.73313c-0.90031,0.01344 -1.74688,0.38969 -2.365,1.03469l-68.8,68.8c-1.34375,1.34375 -1.34375,3.52062 0,4.86437l68.8,68.8c0.86,0.90031 2.15,1.26313 3.34594,0.94063c1.20938,-0.30906 2.15,-1.24969 2.45906,-2.45906c0.3225,-1.19594 -0.04031,-2.48594 -0.94063,-3.34594l-66.36781,-66.36781l66.36781,-66.36781c1.02125,-0.99437 1.31688,-2.49937 0.76594,-3.80281c-0.55094,-1.31688 -1.84094,-2.15 -3.26531,-2.09625z"></path></g></g></svg >  </div>',
+         nextArrow: '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-right-20  sm:-right-10 -right-6 z-10 border border-mute rounded-full flex items-center" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" > <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M51.55969,13.73313c-1.3975,0 -2.64719,0.84656 -3.18469,2.13656c-0.52406,1.30344 -0.215,2.78156 0.79281,3.7625l66.36781,66.36781l-66.36781,66.36781c-0.90031,0.86 -1.26313,2.15 -0.94063,3.34594c0.30906,1.20938 1.24969,2.15 2.45906,2.45906c1.19594,0.3225 2.48594,-0.04031 3.34594,-0.94063l68.8,-68.8c1.34375,-1.34375 1.34375,-3.52062 0,-4.86437l-68.8,-68.8c-0.645,-0.67188 -1.53187,-1.03469 -2.4725,-1.03469z"></path></g></g></svg >  </div>',
          responsive: [
             {
                breakpoint: 1024,
@@ -682,11 +690,6 @@
             },
          ],
       });
-      document.querySelector(".slick-next").innerHTML =
-         '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-right-20  sm:-right-10 -right-6 z-10 border border-mute rounded-full flex items-center" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" > <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M51.55969,13.73313c-1.3975,0 -2.64719,0.84656 -3.18469,2.13656c-0.52406,1.30344 -0.215,2.78156 0.79281,3.7625l66.36781,66.36781l-66.36781,66.36781c-0.90031,0.86 -1.26313,2.15 -0.94063,3.34594c0.30906,1.20938 1.24969,2.15 2.45906,2.45906c1.19594,0.3225 2.48594,-0.04031 3.34594,-0.94063l68.8,-68.8c1.34375,-1.34375 1.34375,-3.52062 0,-4.86437l-68.8,-68.8c-0.645,-0.67188 -1.53187,-1.03469 -2.4725,-1.03469z"></path></g></g></svg >  </div>'
-
-      document.querySelector(".slick-prev").innerHTML =
-         '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-left-20 border border-mute rounded-full flex items-center   sm:-left-10  -left-6  z-10" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" >  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M120.33281,13.73313c-0.90031,0.01344 -1.74688,0.38969 -2.365,1.03469l-68.8,68.8c-1.34375,1.34375 -1.34375,3.52062 0,4.86437l68.8,68.8c0.86,0.90031 2.15,1.26313 3.34594,0.94063c1.20938,-0.30906 2.15,-1.24969 2.45906,-2.45906c0.3225,-1.19594 -0.04031,-2.48594 -0.94063,-3.34594l-66.36781,-66.36781l66.36781,-66.36781c1.02125,-0.99437 1.31688,-2.49937 0.76594,-3.80281c-0.55094,-1.31688 -1.84094,-2.15 -3.26531,-2.09625z"></path></g></g></svg >  </div>'
 
       $(".products").slick({
          dots: false,
@@ -695,6 +698,9 @@
          slidesToShow: 4,
          slidesToScroll: 1,
          arrows: true,
+         prevArrow: '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-left-20 border border-mute rounded-full flex items-center   -left-10    z-10" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" >  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M120.33281,13.73313c-0.90031,0.01344 -1.74688,0.38969 -2.365,1.03469l-68.8,68.8c-1.34375,1.34375 -1.34375,3.52062 0,4.86437l68.8,68.8c0.86,0.90031 2.15,1.26313 3.34594,0.94063c1.20938,-0.30906 2.15,-1.24969 2.45906,-2.45906c0.3225,-1.19594 -0.04031,-2.48594 -0.94063,-3.34594l-66.36781,-66.36781l66.36781,-66.36781c1.02125,-0.99437 1.31688,-2.49937 0.76594,-3.80281c-0.55094,-1.31688 -1.84094,-2.15 -3.26531,-2.09625z"></path></g></g></svg >  </div>',
+         nextArrow: '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-right-20  -right-10  z-10 border border-mute rounded-full flex items-center" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" > <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M51.55969,13.73313c-1.3975,0 -2.64719,0.84656 -3.18469,2.13656c-0.52406,1.30344 -0.215,2.78156 0.79281,3.7625l66.36781,66.36781l-66.36781,66.36781c-0.90031,0.86 -1.26313,2.15 -0.94063,3.34594c0.30906,1.20938 1.24969,2.15 2.45906,2.45906c1.19594,0.3225 2.48594,-0.04031 3.34594,-0.94063l68.8,-68.8c1.34375,-1.34375 1.34375,-3.52062 0,-4.86437l-68.8,-68.8c-0.645,-0.67188 -1.53187,-1.03469 -2.4725,-1.03469z"></path></g></g></svg >  </div>',
+
          responsive: [
             {
                breakpoint: 1024,
@@ -719,12 +725,6 @@
             },
          ],
       });
-      document.querySelector(".slick-next").innerHTML =
-         '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-right-20  -right-10 z-10 border border-mute rounded-full flex items-center" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" > <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M51.55969,13.73313c-1.3975,0 -2.64719,0.84656 -3.18469,2.13656c-0.52406,1.30344 -0.215,2.78156 0.79281,3.7625l66.36781,66.36781l-66.36781,66.36781c-0.90031,0.86 -1.26313,2.15 -0.94063,3.34594c0.30906,1.20938 1.24969,2.15 2.45906,2.45906c1.19594,0.3225 2.48594,-0.04031 3.34594,-0.94063l68.8,-68.8c1.34375,-1.34375 1.34375,-3.52062 0,-4.86437l-68.8,-68.8c-0.645,-0.67188 -1.53187,-1.03469 -2.4725,-1.03469z"></path></g></g></svg >  </div>'
-
-      document.querySelector(".slick-prev").innerHTML =
-         '<div  class="absolute md:w-12 md:h-12 h-8 w-8 md:-left-20 border border-mute rounded-full flex items-center -left-10 z-10" style="top:43%;"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" x="0px" y="0px"   width = "16" height = "16"   viewBox = "0 0 172 172"      style = " fill:#000000;" >  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bcb389"><path d="M120.33281,13.73313c-0.90031,0.01344 -1.74688,0.38969 -2.365,1.03469l-68.8,68.8c-1.34375,1.34375 -1.34375,3.52062 0,4.86437l68.8,68.8c0.86,0.90031 2.15,1.26313 3.34594,0.94063c1.20938,-0.30906 2.15,-1.24969 2.45906,-2.45906c0.3225,-1.19594 -0.04031,-2.48594 -0.94063,-3.34594l-66.36781,-66.36781l66.36781,-66.36781c1.02125,-0.99437 1.31688,-2.49937 0.76594,-3.80281c-0.55094,-1.31688 -1.84094,-2.15 -3.26531,-2.09625z"></path></g></g></svg >  </div>'
-
       $(".instagram").slick({
          dots: false,
          infinite: true,
