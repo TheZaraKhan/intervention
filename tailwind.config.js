@@ -33,6 +33,7 @@ module.exports = {
         blood: "#CA333B",
         maroon: "#831b43",
         mustard: "#e2a466",
+        mute: "#bcb389",
       },
       backgroundImage: (theme) => ({
         herored: "url('/assets/hero-red.png')",
