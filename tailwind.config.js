@@ -3,8 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Cera Pro"', "sans-serif"],
-      Bison: ["Bison"],
+      sans: ["Montserrat"],
     },
     fill: (theme) => ({
       gray: "#737373",
@@ -29,16 +28,18 @@ module.exports = {
 
     extend: {
       colors: {
-        dark_red: "#492b29",
-        blood: "#CA333B",
-        maroon: "#831b43",
-        mustard: "#e2a466",
-        mute: "#bcb389",
+        light: "#5BC8AF",
+        normal: "#297C6B",
+        dark: "#194D44",
+        pressed: "#35BB9C",
+        danger: "#FF7777",
+
+        graymute: "#F5F5F5",
       },
       backgroundImage: (theme) => ({
-        herored: "url('/assets/hero-red.png')",
-        heromaroon: "url('/assets/hero-maroon.png')",
-        heromustard: "url('/assets/hero-mustard.png')",
+        hero: "url('/assets/hero.png')",
+        bottom_desktop: "url('/assets/bg-bottom.png')",
+        bottom_ipad: "url('/assets/bg-bottom.png')",
       }),
 
       maxWidth: {
@@ -90,6 +91,7 @@ module.exports = {
     extend: {
       zIndex: ["hover", "active"],
       height: ["responsive", "hover", "focus"],
+      fontWeight: ["hover"],
     },
   },
   plugins: [],
